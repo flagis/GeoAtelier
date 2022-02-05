@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5926"
+   height="186.02362"
+   gorn="0"
+   width="186.02362"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="svg.schematic.adafruit_05f59642f37c53041db5978a86c0da5e_5_schematic.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1025"
+     inkscape:window-height="605"
+     id="namedview38"
+     showgrid="false"
+     inkscape:zoom="1.2686561"
+     inkscape:cx="79.217686"
+     inkscape:cy="93.01181"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5926" />
+  <desc
+     id="desc3">
+    <referenceFile>DHT11_Temperature_and_Humitidy_Sensor__c__schematic__882b789e09a65a55dd670b473c2ce448.svg</referenceFile>
+  </desc>
+  <defs
+     id="defs5928" />
+  <metadata
+     id="metadata5931">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="fill:none;stroke:none"
+     id="rect10582"
+     height="0"
+     gorn="0.2"
+     width="0"
+     x="0"
+     y="-132.87404" />
+  <g
+     id="schematic"
+     gorn="0.3">
+    <g
+       transform="matrix(0,-1,1,0,0,0)"
+       id="g9">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.79284322;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect10403"
+         height="106.29921"
+         gorn="0.3.0.0"
+         width="132.87405"
+         x="-159.44882"
+         y="53.149605" />
+    </g>
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path10445"
+       gorn="0.3.1"
+       d="m 26.574797,132.87397 26.57481,0" />
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path10449"
+       gorn="0.3.2"
+       d="m 26.574797,106.29917 26.57481,0" />
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path10453"
+       gorn="0.3.3"
+       d="m 26.574797,79.724368 26.57481,0" />
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path10461"
+       gorn="0.3.4"
+       d="m 53.149607,53.149564 -26.574803,0" />
+    <g
+       transform="translate(1.5018493e-6,-3.5689453e-5)"
+       id="g16">
+      <g
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         id="text10504"
+         gorn="0.3.5.0"
+         xml:space="preserve"><text
+           id="tspan10506"
+           gorn="0.3.5.0.0"
+           x="58.464565"
+           y="56.692921">VDD</text>
+</g>    </g>
+    <g
+       transform="translate(1.5018493e-6,-3.5689453e-5)"
+       id="g20">
+      <g
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         id="text10508"
+         gorn="0.3.6.0"
+         xml:space="preserve"><text
+           id="tspan10510"
+           gorn="0.3.6.0.0"
+           x="58.464565"
+           y="83.303154">SDA</text>
+</g>    </g>
+    <g
+       transform="translate(1.5018493e-6,-3.5689453e-5)"
+       id="g24">
+      <g
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         id="text10512"
+         gorn="0.3.7.0"
+         xml:space="preserve"><text
+           id="tspan10514"
+           gorn="0.3.7.0.0"
+           x="58.464565"
+           y="109.84257">GND</text>
+</g>    </g>
+    <g
+       transform="translate(1.5018493e-6,-3.5689453e-5)"
+       id="g28">
+      <g
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         id="text10516"
+         gorn="0.3.8.0"
+         xml:space="preserve"><text
+           id="tspan10518"
+           gorn="0.3.8.0.0"
+           x="58.464565"
+           y="136.45276">SCL</text>
+</g>    </g>
+    <rect
+       style="fill:none;stroke:none"
+       id="connector1pin"
+       height="7.0866141"
+       gorn="0.3.9"
+       width="7.0866141"
+       x="23.031498"
+       y="49.606243" />
+    <rect
+       style="fill:none;stroke:none"
+       id="connector2pin"
+       height="7.0866141"
+       gorn="0.3.10"
+       width="7.0866141"
+       x="23.031498"
+       y="76.181068" />
+    <rect
+       style="fill:none;stroke:none"
+       id="connector3pin"
+       height="7.0866141"
+       gorn="0.3.11"
+       width="7.0866141"
+       x="23.031498"
+       y="102.75591" />
+    <rect
+       style="fill:none;stroke:none"
+       id="connector4pin"
+       height="7.0866141"
+       gorn="0.3.12"
+       width="7.0866141"
+       x="23.031498"
+       y="129.33069" />
+    <g
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:OCR A Std;-inkscape-font-specification:OCR A Std"
+       id="text4619"
+       gorn="0.3.13"
+       xml:space="preserve"><text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans'"
+         id="tspan4621"
+         gorn="0.3.13.0"
+         x="124.01575"
+         y="99.212578">AM2320</text>
+</g>  </g>
+</svg>

@@ -12,7 +12,7 @@
 | 09:25 | [LogWindow]()
 | 09:35 | [GPS 🛰️]()
 | 10:00 | [Sensors 🌡️🎛️🪠 per table]()
-| 10:30 | [WiFi 📶]()
+| 10:30 | [Connecting to the WiFi 📶]()
 | 10:45 | [Sending data to a server]()
 | 11:15 | [Observations & Measurements (O&M)]()
 | 11:30 | [Sending data to an O&M service using REST]()

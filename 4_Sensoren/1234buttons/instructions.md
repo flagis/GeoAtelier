@@ -29,6 +29,7 @@ void loop() {
   if (currentButton2state != button2state) {
     button2state = currentButton2state;
     changed = true;
+
   }
 
   if (changed)

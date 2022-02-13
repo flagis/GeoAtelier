@@ -1,8 +1,9 @@
-#include <TinyGPSPlus.h>
+#include <TinyGPSPlus.h> // https://github.com/mikalhart/TinyGPSPlus
 #include <SoftwareSerial.h>
 
-static const int RXPin = D1, TXPin = D2;
-static const uint32_t GPSBaud = 9600;
+const uint8_t RXPin = D5;
+const uint8_t TXPin = D6;
+const uint32_t GPSBaud = 9600;
 
 // The TinyGPSPlus object
 TinyGPSPlus gps;

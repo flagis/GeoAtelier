@@ -5,13 +5,8 @@
 
 #include <ESP8266WiFi.h>
 
-#ifndef STASSID
-#define STASSID "FLAGIS"
-#define STAPSK  "flagis"
-#endif
-
-const char* ssid     = STASSID;
-const char* password = STAPSK;
+const char* ssid     = "FLAGIS";
+const char* password = "flagis";
 
 const char* host = "djxmmx.net";
 const uint16_t port = 17;

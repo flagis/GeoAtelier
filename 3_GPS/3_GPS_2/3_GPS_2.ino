@@ -1,5 +1,6 @@
 #include <TinyGPSPlus.h> // https://github.com/mikalhart/TinyGPSPlus
 #include <SoftwareSerial.h>
+#include <Arduino_JSON.h>
 
 const uint8_t RXPin = D5;
 const uint8_t TXPin = D6;
@@ -10,6 +11,8 @@ TinyGPSPlus gps;
 
 // The serial connection to the GPS device
 SoftwareSerial ss(RXPin, TXPin);
+
+char dateTime[80];
 
 void setup()
 {
@@ -30,26 +33,26 @@ void loop()
   if (gps.location.isUpdated() || gps.altitude.isUpdated())
   {
     if (gps.location.isValid() && gps.altitude.isValid()) {
-      Serial.print(F("LOCATION   Fix Age="));
-      Serial.print(gps.location.age());
-      Serial.print(F(" Lat="));
-      Serial.print(gps.location.lat(), 6);
-      Serial.print(F(" Long="));
-      Serial.print(gps.location.lng(), 6);
-      Serial.print(F(" Meters="));
-      Serial.println(gps.altitude.meters());
+      JSONVar coordinates;
+      coordinates[0] = gps.location.lat();
+      coordinates[1] = gps.location.lng();
+      coordinates[2] = gps.altitude.meters();
+
+      JSONVar location;
+      location["type"] = "Point";
+      location["coordinates"] = coordinates;
+
+      Serial.println(location);
     }
 
   }
   if (gps.date.isUpdated() || gps.time.isUpdated())
   {
     if (gps.date.isValid() && gps.time.isValid()) {
-      char s[80];
-      sprintf(s, "%04d-%02d-%02dT%02d:%02d:%02d.%02dZ", gps.date.year(), gps.date.month(), gps.date.day(), gps.time.hour(), gps.time.minute(), gps.time.second(), gps.time.centisecond());
-      Serial.print(F("DATETIME   Fix Age="));
-      Serial.print(gps.time.age());
-      Serial.print(F(" "));
-      Serial.println(s);
+      // make ISO8601 date time
+      sprintf(dateTime, "%04d-%02d-%02dT%02d:%02d:%02d.%02dZ", gps.date.year(), gps.date.month(), gps.date.day(), gps.time.hour(), gps.time.minute(), gps.time.second(), gps.time.centisecond());
+
+      Serial.println(dateTime);
     }
   }
 

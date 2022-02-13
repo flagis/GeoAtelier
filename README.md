@@ -2,7 +2,7 @@
 
 # Agenda
 
-## Ochtend
+## Morning start at 09:00
 
 | Tijd  | Topic |
 | ----- | ----------- |
@@ -18,9 +18,9 @@
 | 11:30 | [Sending data to an O&M service using REST]()
 | 12:30 | 🍕🍕🍕🍕🍕
 
-## Namiddag
+## Afternoon starts at 13:00
 
 | Tijd  | Topic |
 | ----- | ----------- |
-| 12:30 | 🍕🍕🍕🍕🍕
-| 13:00 | [Observations & Measurements (O&M) recap]()
+| 13:00 | [🍕🍕🍕 + Recap morning]()
+| 13:30 | [Looking at measurements]()

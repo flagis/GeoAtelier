@@ -15,7 +15,7 @@
 | 10:30 | [WiFi]()
 | 10:45 | [Sending data to a server]()
 | 11:15 | [Observations & Measurements (O&M)]()
-| 11:30 | [Sending data to an O&M service]()
+| 11:30 | [Sending data to an O&M service using REST]()
 | 12:30 | 🍕🍕🍕🍕🍕
 
 ## Namiddag

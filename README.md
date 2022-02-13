@@ -2,6 +2,8 @@
 
 # Agenda
 
+## Ochtend
+
 | Tijd  | Topic |
 | ----- | ----------- |
 | 09:00 | Welkom
@@ -15,3 +17,10 @@
 | 11:15 | [Observations & Measurements (O&M)]()
 | 11:30 | [Sending data to an O&M service]()
 | 12:30 | 🍕🍕🍕🍕🍕
+
+## Namiddag
+
+| Tijd  | Topic |
+| ----- | ----------- |
+| 12:30 | 🍕🍕🍕🍕🍕
+| 13:00 | [Observations & Measurements (O&M) recap]()

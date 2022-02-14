@@ -5,8 +5,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "FLAGIS";
-const char* password = "flagis";
+const char* ssid     = "The Hefty Network";
+const char* password = "0208196700";
 
 const char* host = "djxmmx.net";
 const uint16_t port = 17;
@@ -38,6 +38,8 @@ void setup() {
   Serial.println("WiFi connected");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+  Serial.print("MAC address: ");
+  Serial.println(WiFi.macAddress());
 }
 
 void loop() {

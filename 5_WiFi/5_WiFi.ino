@@ -6,7 +6,7 @@
 #include <ESP8266WiFi.h>
 
 const char* ssid     = "FLAGIS";
-const char* password = "flagis";
+const char* password = "flagis2022";
 
 const char* host = "djxmmx.net";
 const uint16_t port = 17;

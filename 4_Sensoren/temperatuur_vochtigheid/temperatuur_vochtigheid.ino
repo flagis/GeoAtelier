@@ -6,6 +6,7 @@ void setup()
 {
   Serial.begin(115200);
   while (!Serial) {};
+  delay(1000);
 
   AM2320.begin();
   AM2320.wakeUp();

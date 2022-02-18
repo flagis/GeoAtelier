@@ -7,6 +7,7 @@ bool button2state = false;
 void setup() {
   Serial.begin(115200);
   while (!Serial) {};
+  delay(1000);
 
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(button1, INPUT);

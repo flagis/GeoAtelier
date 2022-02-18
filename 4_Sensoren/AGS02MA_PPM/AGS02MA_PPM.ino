@@ -1,13 +1,4 @@
-//
-//    FILE: AGS02MA_PPM.ino
-//  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
-// PURPOSE: test application
-//    DATE: 2021-09-23
-//     URL: https://github.com/RobTillaart/AGS02MA
-//
-
-#include "AGS02MA.h"
+#include "AGS02MA.h" // https://github.com/RobTillaart/AGS02MA
 
 AGS02MA AGS(26);
 
@@ -15,10 +6,8 @@ void setup()
 {
   Serial.begin(115200);
   while (!Serial){};
-  delay(2000);
+  delay(1000);
   
-  Serial.println(__FILE__);
-
   Wire.begin();
 
   Serial.print("AGS02MA_LIB_VERSION: ");
@@ -52,7 +41,6 @@ void setup()
 
 void loop()
 {
-  delay(3000);
   Serial.print("PPM:\t");
   Serial.print(AGS.readPPM(), 3);
   Serial.print("\t");
@@ -62,7 +50,6 @@ void loop()
   Serial.print("\t");
   Serial.print(AGS.lastError(), HEX);
   Serial.println();
+
+  delay(1000);
 }
-
-
-// -- END OF FILE --

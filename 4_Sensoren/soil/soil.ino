@@ -1,4 +1,4 @@
-const int soil_in = 15;// D8 op de  wemos d1 mini v3
+const int soil_in = D8;
 
 void setup()
 {

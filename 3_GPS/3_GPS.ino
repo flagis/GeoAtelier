@@ -1,5 +1,6 @@
 #include <TinyGPSPlus.h> // https://github.com/mikalhart/TinyGPSPlus
 #include <SoftwareSerial.h>
+#include "logging.h"
 
 const uint8_t RXPin = D5;
 const uint8_t TXPin = D6;
@@ -16,7 +17,8 @@ unsigned long last = 0UL;
 
 void setup()
 {
-  Serial.begin(115200);
+  startLogging();
+
   ss.begin(GPSBaud);
 
   Serial.println(F("KitchenSink.ino"));

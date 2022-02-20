@@ -2,7 +2,7 @@
 
 ## Bending Sensor
 
-![MB060-1200x1200w](res/MB060-1200x1200w.png)
+![MB060](res/MB060.png)
 
 ### Sensor:
 ```javascript
@@ -24,7 +24,7 @@
 ```
 
 ## Weighing Scale 
-![MB060-1200x1200w](res/HX711Scale1-1200x1200w.png)
+![HX711](res/HX711.png)
 ### Sensor:
 ```javascript
 {
@@ -45,7 +45,7 @@
 ```
 
 ## Axis Compass Magnetometer  
-
+![hmc5883](res/hmc5883.png)
 ### Sensor:
 ```javascript
 {
@@ -66,7 +66,7 @@
 ```
 
 ## Digital Barometer  
-
+![bmp180](res/bmp180.png)
 ### Sensor:
 ```javascript
 {
@@ -87,7 +87,7 @@
 ```
 
 ## Temperature and Humidity  
-
+![am2320](res/am2320.png)
 ### Sensor:
 ```javascript
 {
@@ -108,7 +108,7 @@
 ```
 
 ## Gas Sensor 
-
+![ags02ma](res/ags02ma.png)
 ### Sensor:
 ```javascript
 {
@@ -129,7 +129,7 @@
 ```
 
 ## Accelerometer  
-
+![adxl345](res/adxl345.png)
 ### Sensor:
 ```javascript
 {
@@ -150,7 +150,7 @@
 ```
 
 ## xxxx 
-
+![xxx](res/xxx.png)
 ### Sensor:
 ```javascript
 {
@@ -171,8 +171,7 @@
 ```
 
 ## yyy 
-
-
+![yyy](res/yyy.png)
 ### Sensor:
 ```javascript
 {
@@ -193,7 +192,7 @@
 ```
 
 ## zzz 
-
+![zzz](res/zzz.png)
 ### Sensor:
 ```javascript
 {

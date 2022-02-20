@@ -114,7 +114,13 @@
   "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AbsoluteHumidity"
 }
 ```
-
+```javascript
+{
+  "name": "Temperature",
+  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
+}
+```
 ## Gas Sensor 
 ![ags02ma](res/ags02ma.png)
 ### Sensor:

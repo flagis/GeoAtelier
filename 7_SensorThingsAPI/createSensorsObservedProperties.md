@@ -28,19 +28,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Load cell",
+  "description": "Read load cells to measure weight",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Weight",
+  "description": "The force with which a body is attracted toward an astronomical body",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Weight"
 }
 ```
 

@@ -4,7 +4,6 @@
 
 ![MB060-1200x1200w](res/MB060-1200x1200w.png)
 
-
 ### Sensor:
 ```javascript
 {
@@ -25,7 +24,7 @@
 ```
 
 ## Weighing Scale 
-
+![MB060-1200x1200w](res/HX711Scale1-1200x1200w.png)
 ### Sensor:
 ```javascript
 {

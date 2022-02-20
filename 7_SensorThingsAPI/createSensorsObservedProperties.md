@@ -2,6 +2,9 @@
 
 ## Bending Sensor
 
+    ![MB060-1200x1200w](res/MB060-1200x1200w.png)
+
+
 ### Sensor:
 ```javascript
 {

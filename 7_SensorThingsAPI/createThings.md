@@ -1,227 +1,182 @@
-# Sensors & ObservedProperties
-
-## Bending Sensor
-
-![MB060](res/MB060.png)
-
-### Sensor:
-```javascript
-{
-  "name": "MB060-N-321-A01",
-  "description": "The Flex sensor can be used to measure bending movements",
-  "encodingType": "application/pdf",
-  "metadata": "http://www.taiwanalpha.com/downloads?target=products&id=22"
-}
-```
-
-### ObservedProperty:
-```javascript
-{
-  "name": "AngleRange",
-  "description": "Bending movements between 0 and 180 degrees",
-  "definition": "https://en.wikipedia.org/wiki/Bending"
-}
-```
-
-## Weighing Scale 
-![HX711](res/HX711.png)
-### Sensor:
-```javascript
-{
-  "name": "Load cell",
-  "description": "Read load cells to measure weight",
-  "encodingType": "application/pdf",
-  "metadata": "https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf"
-}
-```
-
-### ObservedProperty:
-```javascript
-{
-  "name": "Weight",
-  "description": "The force with which a body is attracted toward an astronomical body",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Weight"
-}
-```
-
-## Axis Compass Magnetometer  
-![hmc5883](res/hmc5883.png)
-### Sensor:
-```javascript
-{
-  "name": "Magnetometer",
-  "description": "Compassing and magnetometry",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.farnell.com/datasheets/1683374.pdf"
-}
-```
-
-### ObservedProperty:
-```javascript
-{
-  "name": "Magnetic fields",
-  "description": "Direction and the magnitude of Earth’s magnetic fields",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#MagneticField"
-}
-```
-
-## Digital Barometer  
-![bmp180](res/bmp180.png)
-### Sensor:
-```javascript
-{
-  "name": "BMP180",
-  "description": "Barometric Pressure/Temperature/Altitude Sensor",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.tinytronics.nl/shop/nl/sensoren/lucht/druk/bmp180-digitale-barometer-druk-sensor-module"
-}
-```
-
-### ObservedProperties:
-```javascript
-{
-  "name": "Barometric Pressure",
-  "description": "The pressure exerted at a point due to the presence of an atmosphere",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AtmosphericPressure"
-}
-```
+# Things
 
 ```javascript
 {
-  "name": "Temperature",
-  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
-}
-```
-
-## Temperature and Humidity  
-![am2320](res/am2320.png)
-### Sensor:
-```javascript
-{
-  "name": "AM2320",
-  "description": "Digital Temperature and Humidity Sensor",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.adafruit.com/product/3721"
-}
-```
-
-### ObservedProperty:
-```javascript
-{
-  "name": "Humidity",
-  "description": "Absolute humidity is the mass of water in a particular volume of air. It is a measure of the density of water vapor in an atmosphere",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AbsoluteHumidity"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "1"
+  }
 }
 ```
 ```javascript
 {
-  "name": "Temperature",
-  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "2"
+  }
 }
 ```
-## Gas Sensor 
-![ags02ma](res/ags02ma.png)
-### Sensor:
 ```javascript
 {
-  "name": "ags02MA",
-  "description": "Gas Sensor",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.tinytronics.nl/shop/en/sensors/air/gas/asair-ags02ma-tvoc-gas-sensor"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "3"
+  }
 }
 ```
-
-### ObservedProperty:
 ```javascript
 {
-  "name": "TVOC",
-  "description": "Total Volatile Organic Compounds",
-  "definition": "https://en.wikipedia.org/wiki/Volatile_organic_compound"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "4"
+  }
 }
 ```
-
-## Accelerometer  
-![adxl345](res/adxl345.png)
-### Sensor:
 ```javascript
 {
-  "name": "ADXL345",
-  "description": "3-axis accelerometer",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "5"
+  }
 }
 ```
-
-### ObservedProperty:
 ```javascript
 {
-  "name": "Acceleration",
-  "description": "Acceleration is the (instantaneous) rate of change of velocity",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Acceleration"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "6"
+  }
 }
 ```
-
-## xxxx 
-![MAX4466](res/MAX4466.png)
-### Sensor:
 ```javascript
 {
-  "name": "MAX4466",
-  "description": "Microphone Amplifier Module",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.farnell.com/datasheets/1815587.pdf"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "7"
+  }
 }
 ```
-
-### ObservedProperty:
 ```javascript
 {
-  "name": "SignalStrength",
-  "description": "vibration of air molecules",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#SignalStrength"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "8"
+  }
 }
 ```
-
-## Touch Module
-![TTP224](res/TTP224.png)
-### Sensor:
 ```javascript
 {
-  "name": "Touch Module",
-  "description": "4 capacitive type jog mode touch switch module",
-  "encodingType": "application/pdf",
-  "metadata": "https://www.instructables.com/TTP224-Module-Options/"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "9"
+  }
 }
 ```
-
-### ObservedProperty:
 ```javascript
 {
-  "name": "State",
-  "description": "State up or down",
-  "definition": "n/a"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:DC:3A:71",
+  "properties": {
+    "nr": "10"
+  }
 }
 ```
-
-## RCWL1601 
-![RCWL1601](res/RCWL1601.png)
-### Sensor:
 ```javascript
 {
-  "name": "RCWL1601",
-  "description": "Ultrasonic Distance Sensor",
-  "encodingType": "application/pdf",
-  "metadata": "https://media.digikey.com/pdf/Data%20Sheets/Adafruit%20PDFs/4007_Web.pdf"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "11"
+  }
 }
 ```
-
-### ObservedProperty:
 ```javascript
 {
-  "name": "Distance",
-  "description": "Distance is a numerical measurement of how far apart objects or points are",
-  "definition": "https://en.wikipedia.org/wiki/Distance"
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "12"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "13"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "14"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "15"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "16"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "17"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "18"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "19"
+  }
+}
+```
+```javascript
+{
+  "description": "Wemos D1 mini V3",
+  "name": "E8:DB:84:",
+  "properties": {
+    "nr": "20"
+  }
 }
 ```

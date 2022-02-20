@@ -49,19 +49,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Magnetometer",
+  "description": "Compassing and magnetometry",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.farnell.com/datasheets/1683374.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Magnetic fields",
+  "description": "Direction and the magnitude of Earth’s magnetic fields",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#MagneticField"
 }
 ```
 
@@ -70,19 +70,27 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "BMP180",
+  "description": "Barometric Pressure/Temperature/Altitude Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.tinytronics.nl/shop/nl/sensoren/lucht/druk/bmp180-digitale-barometer-druk-sensor-module"
 }
 ```
 
-### ObservedProperty:
+### ObservedProperties:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Barometric Pressure",
+  "description": "The pressure exerted at a point due to the presence of an atmosphere",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AtmosphericPressure"
+}
+```
+
+```javascript
+{
+  "name": "Temperature",
+  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
 }
 ```
 
@@ -91,19 +99,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "AM2320",
+  "description": "Digital Temperature and Humidity Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.adafruit.com/product/3721"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Humidity",
+  "description": "Absolute humidity is the mass of water in a particular volume of air. It is a measure of the density of water vapor in an atmosphere",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AbsoluteHumidity"
 }
 ```
 
@@ -112,19 +120,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "ags02MA",
+  "description": "Gas Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.tinytronics.nl/shop/en/sensors/air/gas/asair-ags02ma-tvoc-gas-sensor"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "TVOC",
+  "description": "Total Volatile Organic Compounds",
+  "definition": "https://en.wikipedia.org/wiki/Volatile_organic_compound"
 }
 ```
 
@@ -133,19 +141,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "ADXL345",
+  "description": "3-axis accelerometer",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Acceleration",
+  "description": "Acceleration is the (instantaneous) rate of change of velocity",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Acceleration"
 }
 ```
 

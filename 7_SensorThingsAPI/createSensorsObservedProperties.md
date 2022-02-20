@@ -7,7 +7,7 @@
 ### Sensor:
 ```javascript
 {
-  "name": "MB060-N-321-A01",
+  "name": "MB060",
   "description": "The Flex sensor can be used to measure bending movements",
   "encodingType": "application/pdf",
   "metadata": "http://www.taiwanalpha.com/downloads?target=products&id=22"
@@ -28,7 +28,7 @@
 ### Sensor:
 ```javascript
 {
-  "name": "Load cell",
+  "name": "HX711",
   "description": "Read load cells to measure weight",
   "encodingType": "application/pdf",
   "metadata": "https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf"
@@ -49,7 +49,7 @@
 ### Sensor:
 ```javascript
 {
-  "name": "Magnetometer",
+  "name": "HMC5883",
   "description": "Compassing and magnetometry",
   "encodingType": "application/pdf",
   "metadata": "https://www.farnell.com/datasheets/1683374.pdf"
@@ -126,7 +126,7 @@
 ### Sensor:
 ```javascript
 {
-  "name": "ags02MA",
+  "name": "AGS02MA",
   "description": "Gas Sensor",
   "encodingType": "application/pdf",
   "metadata": "https://www.tinytronics.nl/shop/en/sensors/air/gas/asair-ags02ma-tvoc-gas-sensor"

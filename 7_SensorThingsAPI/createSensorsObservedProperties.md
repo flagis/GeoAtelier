@@ -28,19 +28,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Load cell",
+  "description": "Read load cells to measure weight",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Weight",
+  "description": "The force with which a body is attracted toward an astronomical body",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Weight"
 }
 ```
 
@@ -49,19 +49,19 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Magnetometer",
+  "description": "Compassing and magnetometry",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.farnell.com/datasheets/1683374.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Magnetic fields",
+  "description": "Direction and the magnitude of Earth’s magnetic fields",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#MagneticField"
 }
 ```
 
@@ -70,19 +70,27 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "BMP180",
+  "description": "Barometric Pressure/Temperature/Altitude Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.tinytronics.nl/shop/nl/sensoren/lucht/druk/bmp180-digitale-barometer-druk-sensor-module"
 }
 ```
 
-### ObservedProperty:
+### ObservedProperties:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Barometric Pressure",
+  "description": "The pressure exerted at a point due to the presence of an atmosphere",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AtmosphericPressure"
+}
+```
+
+```javascript
+{
+  "name": "Temperature",
+  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
 }
 ```
 
@@ -91,40 +99,46 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "AM2320",
+  "description": "Digital Temperature and Humidity Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.adafruit.com/product/3721"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Humidity",
+  "description": "Absolute humidity is the mass of water in a particular volume of air. It is a measure of the density of water vapor in an atmosphere",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AbsoluteHumidity"
 }
 ```
-
+```javascript
+{
+  "name": "Temperature",
+  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
+}
+```
 ## Gas Sensor 
 ![ags02ma](res/ags02ma.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "ags02MA",
+  "description": "Gas Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.tinytronics.nl/shop/en/sensors/air/gas/asair-ags02ma-tvoc-gas-sensor"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "TVOC",
+  "description": "Total Volatile Organic Compounds",
+  "definition": "https://en.wikipedia.org/wiki/Volatile_organic_compound"
 }
 ```
 
@@ -133,81 +147,81 @@
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "ADXL345",
+  "description": "3-axis accelerometer",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Acceleration",
+  "description": "Acceleration is the (instantaneous) rate of change of velocity",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#Acceleration"
 }
 ```
 
 ## xxxx 
-![xxx](res/xxx.png)
+![MAX4466](res/MAX4466.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "MAX4466",
+  "description": "Microphone Amplifier Module",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.farnell.com/datasheets/1815587.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "SignalStrength",
+  "description": "vibration of air molecules",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#SignalStrength"
 }
 ```
 
-## yyy 
-![yyy](res/yyy.png)
+## Touch Module
+![TTP224](res/TTP224.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Touch Module",
+  "description": "4 capacitive type jog mode touch switch module",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.instructables.com/TTP224-Module-Options/"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "State",
+  "description": "State up or down",
+  "definition": "n/a"
 }
 ```
 
-## zzz 
-![zzz](res/zzz.png)
+## RCWL1601 
+![RCWL1601](res/RCWL1601.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "RCWL1601",
+  "description": "Ultrasonic Distance Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://media.digikey.com/pdf/Data%20Sheets/Adafruit%20PDFs/4007_Web.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Distance",
+  "description": "Distance is a numerical measurement of how far apart objects or points are",
+  "definition": "https://en.wikipedia.org/wiki/Distance"
 }
 ```

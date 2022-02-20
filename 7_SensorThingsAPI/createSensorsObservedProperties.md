@@ -164,64 +164,64 @@
 ```
 
 ## xxxx 
-![xxx](res/xxx.png)
+![MAX4466](res/MAX4466.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "MAX4466",
+  "description": "Microphone Amplifier Module",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.farnell.com/datasheets/1815587.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "SignalStrength",
+  "description": "vibration of air molecules",
+  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#SignalStrength"
 }
 ```
 
-## yyy 
-![yyy](res/yyy.png)
+## Touch Module
+![TTP224](res/TTP224.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "Touch Module",
+  "description": "4 capacitive type jog mode touch switch module",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://www.instructables.com/TTP224-Module-Options/"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "State",
+  "description": "State up or down",
+  "definition": "n/a"
 }
 ```
 
-## zzz 
-![zzz](res/zzz.png)
+## RCWL1601 
+![RCWL1601](res/RCWL1601.png)
 ### Sensor:
 ```javascript
 {
-  "name": "",
-  "description": "",
+  "name": "RCWL1601",
+  "description": "Ultrasonic Distance Sensor",
   "encodingType": "application/pdf",
-  "metadata": ""
+  "metadata": "https://media.digikey.com/pdf/Data%20Sheets/Adafruit%20PDFs/4007_Web.pdf"
 }
 ```
 
 ### ObservedProperty:
 ```javascript
 {
-  "name": "",
-  "description": "",
-  "definition": ""
+  "name": "Distance",
+  "description": "Distance is a numerical measurement of how far apart objects or points are",
+  "definition": "https://en.wikipedia.org/wiki/Distance"
 }
 ```

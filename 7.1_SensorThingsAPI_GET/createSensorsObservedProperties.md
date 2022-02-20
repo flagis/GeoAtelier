@@ -1,5 +1,7 @@
 # Sensors & ObservedProperties
 
+![MB060-1200x1200w](https://user-images.githubusercontent.com/4082369/154852098-b0c754e9-adda-4248-a480-5f0dff89fd7a.JPG)
+
 ## Bending Sensor
 
 ### Sensor:

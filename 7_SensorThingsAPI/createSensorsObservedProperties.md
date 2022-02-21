@@ -5,6 +5,10 @@
 ![MB060](res/MB060.png)
 
 ### Sensor:
+
+POST:
+`http://<host>/FROST-Server/v1.0/Sensors`
+
 ```javascript
 {
   "name": "MB060",
@@ -15,6 +19,10 @@
 ```
 
 ### ObservedProperty:
+
+POST:
+`http://<host>/FROST-Server/v1.0/ObservedProperties`
+
 ```javascript
 {
   "name": "AngleRange",

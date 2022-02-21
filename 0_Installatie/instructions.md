@@ -21,3 +21,5 @@ To get step-by-step instructions select one of the following link accordingly to
 In the menus, go to Board manager... (Tools, Board, Board Manager...)
 
 Search for ESP8266 and install (version 3.0.2)
+
+![BoardManager](res/boardmanager.png)

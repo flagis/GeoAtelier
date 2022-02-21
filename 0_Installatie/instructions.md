@@ -10,6 +10,9 @@ To get step-by-step instructions select one of the following link accordingly to
 
 - Start the Arduino IDE
 - Open the Arduino Preferences:
+
+![Preferences](res/Preferences.png)
+
 - Additional Boards Manager URLs: 
 
   add: https://arduino.esp8266.com/stable/package_esp8266com_index.json

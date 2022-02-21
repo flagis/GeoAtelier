@@ -1,7 +1,7 @@
 # Things
 
 POST:
-`http://<host>/FROST-Server/v1.0/Things(x)`
+`http://<host>/FROST-Server/v1.0/Things(x)/Locations`
 
 ```javascript
 {
@@ -10,7 +10,7 @@ POST:
   "encodingType": "application/vnd.geo+json",
   "location": {
     "type": "Point",
-    "coordinates": [0,0]
+    "coordinates": [4.43, 51.126]
   }
 }
 ```

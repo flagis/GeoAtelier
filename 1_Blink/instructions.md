@@ -29,4 +29,4 @@ void loop() {
 
 Compile and upload your firmware ▶️
 
-Enjouy your blinking LED 😁
+Enjoy your blinking LED 😁

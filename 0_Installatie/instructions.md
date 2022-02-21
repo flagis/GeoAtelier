@@ -23,3 +23,7 @@ In the menus, go to Board manager... (Tools, Board, Board Manager...)
 Search for ESP8266 and install (version 3.0.2)
 
 ![BoardManager](res/boardmanager.png)
+
+Select `LONIN(WEMOS) D1 R2 & mini`
+
+![Board](res/board.png)

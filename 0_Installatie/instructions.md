@@ -11,7 +11,7 @@ To get step-by-step instructions select one of the following link accordingly to
 - Start the Arduino IDE
 - Open the Arduino Preferences:
 
-![Preferences](res/Preferences.png)
+![Preferences](res/Preference.png)
 
 - Additional Boards Manager URLs: 
 

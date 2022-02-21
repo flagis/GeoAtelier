@@ -1,6 +1,6 @@
 # GeoAtelier
 
-# Agenda
+# Agenda 26 of 28 april 2022
 
 ## Morning start at 09:00
 

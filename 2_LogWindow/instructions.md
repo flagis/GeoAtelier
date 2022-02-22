@@ -1,16 +1,18 @@
 # LogWindow
 
-aka Poor-mans-debugging
+aka Poor man's debugging
 
-Monitor the serial output of the things and print it's output:
+Note: inline debugging is also possible, but outside of the scope of this workshop.
 
-## Make the monitor visible
+## Monitor the serial output of the thing and print it's output:
+
+### Make the monitor visible
 
 This can only be done after selecting the port
 
 ![setserial](res/setserial.png)
 
-## Watch the messages go by:
+### Watch the messages go by:
 
 I recommend selecting `Autoscroll` and `Show timestamp`
 

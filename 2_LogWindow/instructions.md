@@ -1,2 +1,33 @@
-# Open the Blink example
+# LogWindow
+
+aka Poor-mans-debugging
+
+Monitor the serial output of the things and print it's output:
+
+![serialmonitor](res/serialmonitor.png)
+
+![setserial](res/setserial.png)
+
+Sketch:
+
+```cpp
+void setup() {
+  Serial.begin(115200);
+  while (!Serial) {};
+  delay(1000);
+  Serial.println("\nBooting");
+
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  Serial.println("aan");
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+  Serial.println("uit");
+}
+```
+
 

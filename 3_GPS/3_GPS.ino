@@ -20,12 +20,6 @@ void setup()
   startLogging();
 
   ss.begin(GPSBaud);
-
-  Serial.println(F("KitchenSink.ino"));
-  Serial.println(F("Demonstrating nearly every feature of TinyGPSPlus"));
-  Serial.print(F("Testing TinyGPSPlus library v. ")); Serial.println(TinyGPSPlus::libraryVersion());
-  Serial.println(F("by Mikal Hart"));
-  Serial.println();
 }
 
 void loop()

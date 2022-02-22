@@ -2,10 +2,9 @@ void setup() {
   Serial.begin(115200);
   while (!Serial) {};
   delay(1000);
+  Serial.println("\nBooting");
 
   pinMode(LED_BUILTIN, OUTPUT);
-
-  Serial.println("setup");
 }
 
 void loop() {

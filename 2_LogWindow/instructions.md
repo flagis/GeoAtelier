@@ -4,9 +4,18 @@ aka Poor-mans-debugging
 
 Monitor the serial output of the things and print it's output:
 
-![serialmonitor](res/serialmonitor.png)
+## Make the monitor visible
+
+This can only be done after selecting the port
 
 ![setserial](res/setserial.png)
+
+## Watch the messages go by:
+
+I recommend selecting `Autoscroll` and `Show timestamp`
+
+![serialmonitor](res/serialmonitor.png)
+
 
 Sketch:
 

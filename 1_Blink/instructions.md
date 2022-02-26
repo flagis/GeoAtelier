@@ -29,4 +29,7 @@ void loop() {
 
 Compile and upload your firmware ▶️
 
+![firmware](res/firmware.png)
+
+
 Enjoy your blinking LED 😁

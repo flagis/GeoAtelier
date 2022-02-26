@@ -12,6 +12,8 @@ In the Arduino IDE, select the port that connects to your WEMOS
 
 # Blink source code
 
+Copy the code below to the Arduino IDE
+
 ```cpp
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.

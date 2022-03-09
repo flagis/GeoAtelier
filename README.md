@@ -1,5 +1,7 @@
 # GeoAtelier
 
+# Locatie: Gent, STAM zaal Baudelo
+
 # Agenda 3 mei 2022
 
 ## Morning start at 09:00

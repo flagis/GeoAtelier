@@ -70,13 +70,7 @@ POST:
   "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AbsoluteHumidity"
 }
 ```
-```javascript
-{
-  "name": "Temperature",
-  "description": "Temperature is a physical quantity that expresses the degree of hotness or coldness of a substance",
-  "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature"
-}
-```
+
 ## Gas Sensor 
 ![ags02ma](res/ags02ma.png)
 
@@ -108,7 +102,7 @@ POST:
 ```javascript
 {
   "name": "SignalStrength",
-  "description": "vibration of air molecules",
+  "description": "Magnitude of the electric field",
   "definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#SignalStrength"
 }
 ```

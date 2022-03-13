@@ -1,5 +1,8 @@
 # Datastreams
 
+POST:
+`http://<host>/FROST-Server/v1.0/Things(x)/Datastreams`
+
 ```javascript
 {
   "name": "xxx",

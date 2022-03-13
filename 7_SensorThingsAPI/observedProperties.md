@@ -1,4 +1,4 @@
-# Sensors & ObservedProperties
+# ObservedProperties
 
 POST:
 `http://<host>/FROST-Server/v1.0/ObservedProperties`

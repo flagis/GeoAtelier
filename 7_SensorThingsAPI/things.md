@@ -1,5 +1,7 @@
 # Things
 
+`https://<host>[:<port>]/FROST-Server/v1.0/Things`
+
 ```javascript
 {
   "description": "Wemos D1 mini V3",

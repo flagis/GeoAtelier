@@ -10,7 +10,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -25,7 +24,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -40,7 +38,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -55,7 +52,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -70,7 +66,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -85,7 +80,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -100,7 +94,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -115,7 +108,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -130,7 +122,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }
@@ -145,7 +136,6 @@
     "symbol": "xxx",
     "definition": "xxxx"
   },
-  "Thing":{"@iot.id": 000},
   "ObservedProperty":{"@iot.id": 000},
   "Sensor":{"@iot.id": 000}
 }

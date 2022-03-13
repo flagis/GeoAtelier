@@ -3,7 +3,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3F:7F",
+  "name": "DC3F7F",
   "properties": {
     "nr": "1"
   }
@@ -12,7 +12,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DA:DD:91",
+  "name": "DADD91",
   "properties": {
     "nr": "2"
   }
@@ -21,7 +21,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:40:24",
+  "name": "DC4024",
   "properties": {
     "nr": "3"
   }
@@ -30,7 +30,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3B:2B",
+  "name": "DC3B2B",
   "properties": {
     "nr": "4"
   }
@@ -39,7 +39,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3F:AA",
+  "name": "DC3FAA",
   "properties": {
     "nr": "5"
   }
@@ -48,7 +48,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3F:25",
+  "name": "DC3F25",
   "properties": {
     "nr": "6"
   }
@@ -57,7 +57,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:44:F9",
+  "name": "DC44F9",
   "properties": {
     "nr": "7"
   }
@@ -66,7 +66,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:44:CC",
+  "name": "DC44CC",
   "properties": {
     "nr": "8"
   }
@@ -75,7 +75,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:34:7F",
+  "name": "DC347F",
   "properties": {
     "nr": "9"
   }
@@ -84,7 +84,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3A:71",
+  "name": "DC3A71",
   "properties": {
     "nr": "10"
   }
@@ -93,7 +93,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:41:0A",
+  "name": "DC410A",
   "properties": {
     "nr": "11"
   }
@@ -102,7 +102,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:31:7E",
+  "name": "DC317E",
   "properties": {
     "nr": "12"
   }
@@ -111,7 +111,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:31:A4",
+  "name": "DC31A4",
   "properties": {
     "nr": "13"
   }
@@ -120,7 +120,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:42:2D",
+  "name": "DC422D",
   "properties": {
     "nr": "14"
   }
@@ -129,7 +129,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DA:DD:D9",
+  "name": "DADDD9",
   "properties": {
     "nr": "15"
   }
@@ -138,7 +138,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:40:63",
+  "name": "DC4063",
   "properties": {
     "nr": "16"
   }
@@ -147,7 +147,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:38:D6",
+  "name": "DC38D6",
   "properties": {
     "nr": "17"
   }
@@ -156,7 +156,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DA:DD:99",
+  "name": "DADD99",
   "properties": {
     "nr": "18"
   }
@@ -165,7 +165,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:3A:2C",
+  "name": "DC3A2C",
   "properties": {
     "nr": "19"
   }
@@ -174,7 +174,7 @@
 ```javascript
 {
   "description": "Wemos D1 mini V3",
-  "name": "E8:DB:84:DC:40:97",
+  "name": "DC4097",
   "properties": {
     "nr": "20"
   }

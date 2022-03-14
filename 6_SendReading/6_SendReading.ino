@@ -10,6 +10,8 @@
 MySQL_Connection conn((Client *)&client);
 auto query_mem = MySQL_Query(&conn);
 
+float measurement = 0.0f;
+
 void setup()
 {
   startLogging();
@@ -23,6 +25,8 @@ void setup()
 }
 
 bool measure {
+  measurement = 3.14159f; // your measurement
+  
   return true;
 }
 
@@ -30,11 +34,9 @@ void runInsert()
 {
   if (conn.connected())
   {
-    float measurement = 3.14159f; // your measurement
-
     // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
-                      + " (id, measureTime, measurement) VALUES ('" + WiFi.macAddress() + "', " + millis() + ", " + measurement + " )";
+                      + " (id, measureTime, measurement) VALUES ('" + WiFi.getChipId() + "', " + millis() + ", " + measurement + " )";
     Serial.println(INSERT_SQL);
 
     if ( !query_mem.execute(INSERT_SQL.c_str()) )

@@ -4,7 +4,7 @@
 
 #include "logging.h"
 #include "credentials.h"
-#include "settings.h"
+#include "stapi_settings.h"
 #include "wifi.h"
 
 void setup()

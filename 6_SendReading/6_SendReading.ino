@@ -22,6 +22,10 @@ void setup()
   Serial.println(server_port);
 }
 
+bool measure {
+  return true;
+}
+
 void runInsert()
 {
   if (conn.connected())
@@ -49,7 +53,8 @@ void loop()
   //if (conn.connect(server, server_port, user, password))
   if (conn.connectNonBlocking(server, server_port, user, password) != RESULT_FAIL)
   {
-    runInsert();
+    if (measure())
+      runInsert();
     conn.close();                     // close the connection
   }
   else

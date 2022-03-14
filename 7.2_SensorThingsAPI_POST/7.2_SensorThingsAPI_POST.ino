@@ -20,9 +20,9 @@ void runInsert()
   HTTPClient http;
 
   http.begin(client, "http://stapi.snuffeldb.synology.me/FROST-Server/v1.0");
-  //  http.addHeader("Content-Type", "application/json");
-  //  String httpRequestData = "{}";
-  auto httpResponseCode = http.GET();
+  http.addHeader("Content-Type", "application/json");
+  String httpRequestData = "{}";
+  auto httpResponseCode = http.POST();
   if (httpResponseCode > 0) {
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);

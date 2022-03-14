@@ -19,7 +19,7 @@ void runInsert()
   WiFiClient client;
   HTTPClient http;
 
-  http.begin(client, "http://stapi.snuffeldb.synology.me/FROST-Server/v1.0");
+  http.begin(client, base_url);
   http.addHeader("Content-Type", "application/json");
   String httpRequestData = "{}";
   auto httpResponseCode = http.POST();

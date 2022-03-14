@@ -14,6 +14,11 @@ void setup()
   connect2Wifi(ssid, pass);
 }
 
+bool measure()
+{
+  return true;
+}
+
 void runInsert()
 {
   WiFiClient client;
@@ -21,8 +26,8 @@ void runInsert()
 
   http.begin(client, base_url);
   http.addHeader("Content-Type", "application/json");
-  String httpRequestData = "{}";
-  auto httpResponseCode = http.POST();
+  String httpRequestData = "{ TODO }";
+  auto httpResponseCode = http.POST(httpRequestData);
   if (httpResponseCode > 0) {
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);
@@ -35,7 +40,8 @@ void runInsert()
 
 void loop()
 {
-  runInsert();
+  if (measure())
+    runInsert();
 
   delay(60000); // wait a minute
 }

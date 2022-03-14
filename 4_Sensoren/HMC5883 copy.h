@@ -1,6 +1,0 @@
-void start() {
-
-}
-
-void measure() {
-}

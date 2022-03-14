@@ -5,12 +5,10 @@ HX711 scale; // instance
 const uint8_t dataPin = D2;
 const uint8_t clockPin = D3;
 
+float weight = 0.0f;
+
 void setup()
 {
-  Serial.begin(115200);
-  while (!Serial) {};
-  delay(1000);
-
   scale.begin(dataPin, clockPin);
 
   // Scale resolution max 5kg
@@ -21,7 +19,7 @@ void setup()
 
 void loop()
 {
-  auto f = scale.get_units(5);
+  weight = scale.get_units(5);
   Serial.println(f);
   delay(250); // continuously measure, 4x per second
 }

@@ -4,14 +4,15 @@
 //#include "buttons.h"
 //#include "HMC5883.h"
 //#include "HX711.h"
+//#include "HCSR04.h"
 
 #include "logging.h"
 
 void setup() {
   startLogging();
-  start();
+  startSensor();
 }
 
 void loop() {
-  measure();
+  readSensor();
 }

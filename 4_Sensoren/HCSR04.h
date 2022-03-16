@@ -1,14 +1,16 @@
-const uint8_t trigPin = 15;
-const uint8_t echoPin = 13;
+// zie: https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6
+
+const uint8_t trigPin = 15; // digital ??
+const uint8_t echoPin = 13; // digital ??
 
 float distance = 0.0f;
 
-void start() {
+void startSensor() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
 
-void measure() {
+void readSensor() {
   digitalWrite(trigPin, LOW);  
   delayMicroseconds(2); 
   digitalWrite(trigPin, HIGH);

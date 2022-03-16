@@ -2,6 +2,14 @@
 #include <ESP8266HTTPClient.h>
 #include <Arduino_JSON.h> // from https://github.com/arduino-libraries/Arduino_JSON
 
+//#include "ADXL345.h"
+//#include "BMP085.h"
+//#include "BMP180.h"
+//#include "buttons.h"
+//#include "HMC5883.h"
+//#include "HX711.h"
+//#include "HCSR04.h"
+
 #include "logging.h"
 #include "credentials.h"
 #include "stapi_settings.h"
@@ -10,13 +18,9 @@
 void setup()
 {
   startLogging();
+ // startSensor();
 
   connect2Wifi(ssid, pass);
-}
-
-bool measure()
-{
-  return true;
 }
 
 void runInsert()
@@ -24,9 +28,13 @@ void runInsert()
   WiFiClient client;
   HTTPClient http;
 
-  http.begin(client, base_url);
+  JSONVar myObject;
+  myObject["phenomenonTime"] = "2017-02-07T18:02:00.000Z";
+  myObject["result"] = 48.756080;
+  String httpRequestData = JSON.stringify(myObject);
+
+  http.begin(client, base_url + "/Datastream(" + "1" + ")/Observations");
   http.addHeader("Content-Type", "application/json");
-  String httpRequestData = "{ TODO }";
   auto httpResponseCode = http.POST(httpRequestData);
   if (httpResponseCode > 0) {
     Serial.print("HTTP Response code: ");
@@ -40,8 +48,6 @@ void runInsert()
 
 void loop()
 {
-  if (measure())
-    runInsert();
-
-  delay(60000); // wait a minute
+ // readSensor();
+  runInsert();
 }

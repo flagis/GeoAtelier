@@ -5,7 +5,7 @@ HX711 scale; // instance
 const uint8_t dataPin = D2;
 const uint8_t clockPin = D3;
 
-void start() {
+void startSensor() {
   scale.begin(dataPin, clockPin);
 
   // Scale resolution max 5kg
@@ -16,6 +16,6 @@ void start() {
 
 }
 
-void measure() {
+void readSensor() {
   auto f = scale.get_units(5);
 }

@@ -2,7 +2,7 @@
 
 AGS02MA AGS(26);
 
-void start() {
+void startSensor() {
   Wire.begin();
   bool b = AGS.begin();
 
@@ -18,7 +18,7 @@ void start() {
   uint8_t m = AGS.getMode();
 }
 
-void measure() {
+void readSensor() {
   Serial.print("PPM:\t");
   Serial.print(AGS.readPPM(), 3);
   Serial.print("\t");

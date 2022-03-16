@@ -1,6 +1,6 @@
-void start() {
+void startSensor() {
 
 }
 
-void measure() {
+void readSensor() {
 }

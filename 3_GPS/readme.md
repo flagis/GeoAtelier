@@ -6,8 +6,10 @@
 | ----- | ----------- |
 | VCC | Red (straight) wire to VCC (3.3V) busbar 
 | GND | Black (straight) wire to GND busbar 
-| TX | Puple (straight) wire to D6
-| RX | Not connected to D5
+| TX | Purple (straight) wire to D5
+| RX | Not connected to D6
+
+![port](res/gps.png)
 
 ### Serial connection
 

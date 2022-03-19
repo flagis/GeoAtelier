@@ -43,7 +43,6 @@ void transmitValue(float value)
     char hexString[20];
     itoa(ESP.getChipId(), hexString, 16); // HEX ID of chip (last 3 digits of MAC)
 
-    // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
                       + " (id, measureDateTime, location, measurement) VALUES ('"
                       + hexString + "', '"

@@ -1,5 +1,13 @@
 #include <ESP8266WiFi.h>
 
+#include "ADXL345.h"
+//#include "BMP085.h"
+//#include "BMP180.h"
+//#include "buttons.h"
+//#include "HMC5883.h"
+//#include "HX711.h"
+//#include "HCSR04.h"
+
 #include "logging.h"
 #include "credentials.h"
 #include "settings.h"
@@ -15,24 +23,19 @@ float measurement = 0.0f;
 void setup()
 {
   setupLogging();
+  setupSensor();
 
   connect2Wifi(ssid, pass);
+}
 
+void transmitValue()
+{
   Serial.print("Connecting to SQL Server @");
   Serial.print(server);
   Serial.print(", Port =");
   Serial.println(server_port);
-}
 
-bool measure {
-  measurement = 3.14159f; // your measurement
-  
-  return true;
-}
-
-void runInsert()
-{
-  if (conn.connected())
+  if (conn.connectNonBlocking(server, server_port, user, password) != RESULT_FAIL)
   {
     // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
@@ -43,24 +46,16 @@ void runInsert()
       Serial.println("Insert error");
     else
       Serial.println("Data Inserted.");
+
+    Serial.println("Closing connection.");
+    conn.close();
   }
   else
-    Serial.println("Disconnected from Server. Can't insert.");
+    Serial.println("nConnect failed. Trying again on next iteration.");
 }
 
 void loop()
 {
-  Serial.println("Connecting...");
-
-  //if (conn.connect(server, server_port, user, password))
-  if (conn.connectNonBlocking(server, server_port, user, password) != RESULT_FAIL)
-  {
-    if (measure())
-      runInsert();
-    conn.close();                     // close the connection
-  }
-  else
-    Serial.println("\nConnect failed. Trying again on next iteration.");
-
-  delay(60000); // wait a minute
+  loopSensor();
+  transmitValue();
 }

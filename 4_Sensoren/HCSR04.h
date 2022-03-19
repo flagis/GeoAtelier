@@ -10,7 +10,7 @@ void setupSensor() {
   pinMode(echoPin, INPUT);
 }
 
-void loopSensor() {
+bool loopSensor() {
   digitalWrite(trigPin, LOW);  
   delayMicroseconds(2); 
   digitalWrite(trigPin, HIGH);

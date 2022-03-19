@@ -18,7 +18,7 @@ void setupSensor() {
   uint8_t m = AGS.getMode();
 }
 
-void loopSensor() {
+bool loopSensor() {
   Serial.print("PPM:\t");
   Serial.print(AGS.readPPM(), 3);
   Serial.print("\t");

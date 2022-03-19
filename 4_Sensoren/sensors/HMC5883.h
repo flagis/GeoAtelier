@@ -5,9 +5,9 @@
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
-void setupSensor() {
+void setupSensors() {
   mag.begin();
 }
 
-void loopSensor() {
+void loopSensors() {
 }

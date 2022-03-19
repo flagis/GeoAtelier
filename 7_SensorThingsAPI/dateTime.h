@@ -24,6 +24,6 @@ String getISO8601dateTime()
   getLocalTime(&timeinfo);
   
   char buffer [80];
-  sprintf(buffer, "%04d-%02d-%02dT%02d:%02d:%02dZ", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday, timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec);
+  sprintf(buffer, "%04d-%02d-%02dT%02d:%02d:%02d.%03dZ", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday, timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec, millis());
   return String(buffer);
 }

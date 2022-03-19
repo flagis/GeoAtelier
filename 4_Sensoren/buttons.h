@@ -1,6 +1,0 @@
-void setupSensor() {
-
-}
-
-void loopSensor() {
-}

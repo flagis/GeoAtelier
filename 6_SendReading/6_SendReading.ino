@@ -1,13 +1,5 @@
 #include <ESP8266WiFi.h>
 
-//#include "../4_Sensoren/ADXL345.h"
-//#include "../4_Sensoren/BMP085.h"
-//#include "../4_Sensoren/BMP180.h"
-//#include "../4_Sensoren/buttons.h"
-//#include "../4_Sensoren/HMC5883.h"
-//#include "../4_Sensoren/HX711.h"
-#include "../4_Sensoren/HCSR04.h"
-
 #include "logging.h"
 #include "credentials.h"
 #include "dbSettings.h"
@@ -17,6 +9,16 @@
 
 #include <MySQL_Generic.h>
 
+void transmitValue(float value);
+
+//#include "sensors/ADXL345.h"
+//#include "sensors/BMP085.h"
+//#include "sensors/BMP180.h"
+//#include "sensors/buttons.h"
+//#include "sensors/HMC5883.h"
+//#include "sensors/HX711.h"
+#include "sensors/HCSR04.h"
+
 MySQL_Connection conn((Client *)&client);
 auto query_mem = MySQL_Query(&conn);
 
@@ -24,7 +26,7 @@ void setup()
 {
   setupLogging();
   setupGPS();
-  //  setupSensor();
+  setupSensors();
 
   connect2Wifi(ssid, pass);
 }
@@ -43,10 +45,10 @@ void transmitValue(float value)
 
     // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
-                      + " (id, measureDateTime, location, measurement) VALUES ('" 
-                      + hexString + "', '" 
-                      + getISO8601localDateTime() 
-                      + "', PointFromText('POINT(" + lng + " " + lat + ")'), " 
+                      + " (id, measureDateTime, location, measurement) VALUES ('"
+                      + hexString + "', '"
+                      + getISO8601localDateTime()
+                      + "', PointFromText('POINT(" + lng + " " + lat + ")'), "
                       + value + " )";
     Serial.println(INSERT_SQL);
 
@@ -65,5 +67,5 @@ void transmitValue(float value)
 void loop()
 {
   loopGPS();
-  loopSensor();
+  loopSensors();
 }

@@ -2,7 +2,7 @@
 
 AGS02MA AGS(26); // 26 =
 
-void setupSensor() {
+void setupSensors() {
   Wire.begin();
   bool b = AGS.begin();
 
@@ -18,7 +18,7 @@ void setupSensor() {
   uint8_t m = AGS.getMode();
 }
 
-void loopSensor() {
+void loopSensors() {
   Serial.print("PPM:\t");
   Serial.print(AGS.readPPM(), 3);
   Serial.print("\t");

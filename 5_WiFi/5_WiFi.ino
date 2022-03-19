@@ -6,10 +6,10 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
-#include "credentials.h"
-#include "settings.h"
-#include "logging.h"
-#include "dateTime.h"
+#include "utils/credentials.h"
+#include "utils/settings.h"
+#include "utils/logging.h"
+#include "utils/dateTime.h"
 
 void setup() {
   setupLogging();

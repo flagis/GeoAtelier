@@ -1,6 +1,6 @@
 #include <TinyGPSPlus.h> // https://github.com/mikalhart/TinyGPSPlus
 #include <SoftwareSerial.h>
-#include "logging.h"
+#include "utils/logging.h"
 
 const uint8_t RXPin = D5;
 const uint8_t TXPin = D6;

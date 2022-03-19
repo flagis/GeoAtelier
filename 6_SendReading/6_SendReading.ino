@@ -1,23 +1,23 @@
 #include <ESP8266WiFi.h>
 
-#include "logging.h"
-#include "credentials.h"
-#include "dbSettings.h"
-#include "wifi.h"
-#include "dateTime.h"
-#include "gps.h"
+#include "utils/logging.h"
+#include "utils/credentials.h"
+#include "utils/dbSettings.h"
+#include "utils/wifi.h"
+#include "utils/dateTime.h"
+#include "utils/gps.h"
 
 #include <MySQL_Generic.h>
 
 void transmitValue(float value);
 
-//#include "sensors/ADXL345.h"
-//#include "sensors/BMP085.h"
-//#include "sensors/BMP180.h"
-//#include "sensors/buttons.h"
-//#include "sensors/HMC5883.h"
-//#include "sensors/HX711.h"
-#include "sensors/HCSR04.h"
+//#include "ADXL345.h"
+//#include "BMP085.h"
+//#include "BMP180.h"
+//#include "buttons.h"
+//#include "HMC5883.h"
+//#include "HX711.h"
+#include "HCSR04.h"
 
 MySQL_Connection conn((Client *)&client);
 auto query_mem = MySQL_Query(&conn);

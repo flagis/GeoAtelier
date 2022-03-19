@@ -1,12 +1,12 @@
-//#include "sensors/ADXL345.h"
-//#include "sensors/BMP085.h"
-//#include "sensors/BMP180.h"
-//#include "sensors/buttons.h"
-//#include "sensors/HMC5883.h"
-//#include "sensors/HX711.h"
-#include "sensors/HCSR04.h"
+#include "utils/logging.h"
 
-#include "logging.h"
+//#include "ADXL345.h"
+//#include "BMP085.h"
+//#include "BMP180.h"
+//#include "buttons.h"
+//#include "HMC5883.h"
+//#include "HX711.h"
+#include "HCSR04.h"
 
 void setup() {
   setupLogging();

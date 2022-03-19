@@ -22,5 +22,7 @@ bool connect2Wifi(char* ssid, char* pass)
   Serial.print("MAC address: ");
   Serial.println(WiFi.macAddress());
 
+  configTime(0, 0, "pool.ntp.org"); // get time in zulu
+
   return true;
 }

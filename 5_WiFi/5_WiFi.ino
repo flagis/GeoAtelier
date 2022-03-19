@@ -5,14 +5,11 @@
 
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
-#include <NTPClient.h>
 
 #include "credentials.h"
 #include "settings.h"
 #include "logging.h"
-
-WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP);
+#include "dateTime.h"
 
 void setup() {
   setupLogging();
@@ -36,13 +33,11 @@ void setup() {
   Serial.print("MAC address: ");
   Serial.println(WiFi.macAddress());
 
-  timeClient.begin();
+  configTime(0, 0, "pool.ntp.org"); // get time in zulu
 }
 
 void loop() {
-  timeClient.update();
+  Serial.println(getISO8601dateTime());
 
-  Serial.println(timeClient.getFormattedTime());
-
-  delay(1000);
+  delay(250);
 }

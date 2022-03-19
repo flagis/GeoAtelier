@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 
-#include "ADXL345.h"
+//#include "ADXL345.h"
 //#include "BMP085.h"
 //#include "BMP180.h"
 //#include "buttons.h"
@@ -10,25 +10,26 @@
 
 #include "logging.h"
 #include "credentials.h"
-#include "settings.h"
+#include "dbSettings.h"
 #include "wifi.h"
+#include "dateTime.h"
+#include "gps.h"
 
 #include <MySQL_Generic.h>
 
 MySQL_Connection conn((Client *)&client);
 auto query_mem = MySQL_Query(&conn);
 
-float measurement = 0.0f;
-
 void setup()
 {
   setupLogging();
-  setupSensor();
+  setupGPS();
+  //  setupSensor();
 
   connect2Wifi(ssid, pass);
 }
 
-void transmitValue()
+void transmitValue(float value)
 {
   Serial.print("Connecting to SQL Server @");
   Serial.print(server);
@@ -37,9 +38,13 @@ void transmitValue()
 
   if (conn.connectNonBlocking(server, server_port, user, password) != RESULT_FAIL)
   {
+    char hexString[20];
+    itoa(ESP.getChipId(), hexString, 16); // HEX ID of chip (last 3 digits of MAC)
+
     // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
-                      + " (id, measureTime, measurement) VALUES ('" + WiFi.getChipId() + "', " + millis() + ", " + measurement + " )";
+                      + " (id, measureDateTime, location, measurement) VALUES ('" + hexString + "', '" + getISO8601localDateTime() 
+                      + "', PointFromText('POINT(" + lng + " " + lat + ")'), " + value + " )";
     Serial.println(INSERT_SQL);
 
     if ( !query_mem.execute(INSERT_SQL.c_str()) )
@@ -56,6 +61,7 @@ void transmitValue()
 
 void loop()
 {
-  loopSensor();
-  transmitValue();
+  // loopSensor();
+  loopGPS();
+  transmitValue(3.14f);
 }

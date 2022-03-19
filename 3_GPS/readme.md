@@ -19,6 +19,12 @@ The GPS communicates at 9600 baud.
 
 The GPS is not connected to the hardware serial of the Wemos, as this is already used for uploading code and debugging messages. Instead, we use 2 arbitrary pins (D5 and D6) for serial software communication (this is fine as communication is only at 9600 baud).
 
+### Software
+
+Install Tinygps using the library manager.
+
+![port](res/tinygps.png)
+
 ```cpp
 const uint8_t RXPin = D5;
 const uint8_t TXPin = D6;

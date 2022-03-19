@@ -16,7 +16,14 @@ auto base_url = String(protocol) + "://" + domain + path;
 
 ## Sending observations
 
+### The datastream, really tied the room together”
+The datastream is where this Thing, Sensor, ObservedProperty and Observation are tied together.
+
+### The code:
+
 ```cpp
+void transmitValue(const int datastreamId, const JSONVar& observation)
+{
   String url = base_url + "/Datastream(" + datastreamId + ")/Observations";
   Serial.println(url);
  
@@ -36,5 +43,6 @@ auto base_url = String(protocol) + "://" + domain + path;
   }
 
   http.end();
+}
 ```
 

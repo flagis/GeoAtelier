@@ -1,12 +1,12 @@
 #include <ESP8266WiFi.h>
 
-//#include "ADXL345.h"
-//#include "BMP085.h"
-//#include "BMP180.h"
-//#include "buttons.h"
-//#include "HMC5883.h"
-//#include "HX711.h"
-//#include "HCSR04.h"
+//#include "../4_Sensoren/ADXL345.h"
+//#include "../4_Sensoren/BMP085.h"
+//#include "../4_Sensoren/BMP180.h"
+//#include "../4_Sensoren/buttons.h"
+//#include "../4_Sensoren/HMC5883.h"
+//#include "../4_Sensoren/HX711.h"
+#include "../4_Sensoren/HCSR04.h"
 
 #include "logging.h"
 #include "credentials.h"
@@ -43,8 +43,11 @@ void transmitValue(float value)
 
     // Sample query
     auto INSERT_SQL = String("INSERT INTO geo_atelier.sensor")
-                      + " (id, measureDateTime, location, measurement) VALUES ('" + hexString + "', '" + getISO8601localDateTime() 
-                      + "', PointFromText('POINT(" + lng + " " + lat + ")'), " + value + " )";
+                      + " (id, measureDateTime, location, measurement) VALUES ('" 
+                      + hexString + "', '" 
+                      + getISO8601localDateTime() 
+                      + "', PointFromText('POINT(" + lng + " " + lat + ")'), " 
+                      + value + " )";
     Serial.println(INSERT_SQL);
 
     if ( !query_mem.execute(INSERT_SQL.c_str()) )
@@ -61,7 +64,6 @@ void transmitValue(float value)
 
 void loop()
 {
-  // loopSensor();
   loopGPS();
-  transmitValue(3.14f);
+  loopSensor();
 }

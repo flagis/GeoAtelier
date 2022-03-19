@@ -16,6 +16,6 @@ void setupSensor() {
 
 }
 
-bool loopSensor() {
+void loopSensor() {
   auto f = scale.get_units(5);
 }

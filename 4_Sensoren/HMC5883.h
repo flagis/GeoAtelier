@@ -9,5 +9,5 @@ void setupSensor() {
   mag.begin();
 }
 
-bool loopSensor() {
+void loopSensor() {
 }

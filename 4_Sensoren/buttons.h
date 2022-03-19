@@ -2,5 +2,5 @@ void setupSensor() {
 
 }
 
-bool loopSensor() {
+void loopSensor() {
 }

@@ -1,21 +1,27 @@
 // zie: https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6
 
-const uint8_t trigPin = 15; // digital ??
-const uint8_t echoPin = 13; // digital ??
+const uint8_t trigPin = D8;
+const uint8_t echoPin = D7;
 
-float distance = 0.0f;
+float distance = -1.0f;
 
 void setupSensor() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
 
-bool loopSensor() {
-  digitalWrite(trigPin, LOW);  
-  delayMicroseconds(2); 
+void loopSensor() {
+  delay(10);
+
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
   digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10); 
+  delayMicroseconds(10);
 
   auto duration = pulseIn(echoPin, HIGH); // duration in xxx
-  distance = (duration / 2) / 29.1; // wat is dit magisch nummer?
+  distance = (duration) * 0.0343 / 2; // Speed of sound (343 m/s) divided by 2 (to go and back)
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
 }

@@ -8,7 +8,7 @@ void setupSensor() {
   adxl.powerOn();
 }
 
-bool loopSensor() {
+void loopSensor() {
   adxl.readXYZ(&x, &y, &z); //read the accelerometer values and store them in variables  x,y,z
   adxl.getAcceleration(xyz);
 

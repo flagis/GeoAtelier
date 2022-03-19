@@ -10,7 +10,7 @@ void setupSensor() {
   myBarometer.init();
 }
 
-bool loopSensor() {
+void loopSensor() {
   temperature = myBarometer.bmp085GetTemperature(myBarometer.bmp085ReadUT());
   pressure = myBarometer.bmp085GetPressure(myBarometer.bmp085ReadUP());
 }

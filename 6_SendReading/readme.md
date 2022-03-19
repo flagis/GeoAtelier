@@ -1,2 +1,1 @@
-# Open the Blink example
-
+# Read and Transmit reading to a database

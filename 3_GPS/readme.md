@@ -21,7 +21,7 @@ The GPS is not connected to the hardware serial of the Wemos, as this is already
 
 ### Software
 
-Install Tinygps using the library manager.
+Install TinyGPSPlus using the library manager.
 
 ![port](res/tinygps.png)
 

@@ -25,4 +25,7 @@
 | Tijd  | Topic |
 | ----- | ----------- |
 | 13:00 | [🍕🍕🍕 + Recap morning]()
-| 13:30 | [Looking at measurements]()
+| 13:30 | [IoT Communication]()
+| 14:00 | [Observations & Measurements (O&M) & variations]()
+| 14:30 | [Scaling IoT]()
+| 14:30 | [Looking at measurements in 2D and 3D]()

@@ -2,6 +2,11 @@
 
 AGS02MA AGS(26); // 26 =
 
+const float measurePPM()
+{
+  return AGS.readPPM();
+}
+
 void setupSensors() {
   Wire.begin();
   bool b = AGS.begin();
@@ -18,14 +23,27 @@ void setupSensors() {
   uint8_t m = AGS.getMode();
 }
 
-void loopSensors() {
-  Serial.print("PPM:\t");
-  Serial.print(AGS.readPPM(), 3);
-  Serial.print("\t");
-  Serial.print(AGS.dataReady(), HEX);
-  Serial.print("\t");
-  Serial.print(AGS.lastStatus(), HEX);
-  Serial.print("\t");
-  Serial.print(AGS.lastError(), HEX);
-  Serial.println();
+void loopSensors() 
+{
+  JSONVar point;
+  point["type"] = "Point";
+  JSONVar coordinates;
+  coordinates[0] = lat;
+  coordinates[1] = lng;
+  point["coordinates"] = coordinates;
+
+  JSONVar featureOfInterest;
+  featureOfInterest["name"] = "hier"; // TODO
+  featureOfInterest["description"] = "iets meer naar ginder"; // TODO
+  featureOfInterest["encodingType"] = "application/vnd.geo+json";
+  featureOfInterest["feature"] = point;
+
+  JSONVar observation;
+  observation["phenomenonTime"] = getISO8601dateTime();
+  observation["FeatureOfInterest"] = featureOfInterest;
+
+  observation["result"] = measurePPM();
+  transmitValue(5, observation);
+
+  delay(100); // 10Hz
 }

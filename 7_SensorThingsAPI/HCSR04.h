@@ -5,6 +5,8 @@ const uint8_t trigPin = D8;
 const uint8_t echoPin = D7;
 
 void setupSensors() {
+  Serial.println("Setting pin modes");
+  
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
@@ -41,13 +43,11 @@ void loopSensors()
   featureOfInterest["encodingType"] = "application/vnd.geo+json";
   featureOfInterest["feature"] = point;
 
-  auto distance = measureDistance();
-
   JSONVar observation;
   observation["phenomenonTime"] = getISO8601dateTime();
-  observation["result"] = distance;
   observation["FeatureOfInterest"] = featureOfInterest;
 
+  observation["result"] = measureDistance();
   transmitValue(3, observation);
 
   delay(100); // 10Hz

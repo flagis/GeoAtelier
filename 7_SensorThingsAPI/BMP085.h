@@ -1,16 +1,46 @@
 #include <Wire.h>
-#include <BMP085.h>
+#include <Adafruit_BMP085.h> // from library manager: Adafruit BMP085 library (1.2.1) (non unified)
 
-BMP085 myBarometer;
+Adafruit_BMP085 bmp;
 
-float temperature;
-float pressure;
+const float measureTemperature()
+{
+  return bmp.readTemperature();
+}
+
+const float measurePressure()
+{
+  return bmp.readPressure();
+}
 
 void setupSensors() {
-  myBarometer.init();
+  if (!bmp.begin())
+    Serial.println("error initializing BMO085");
 }
 
 void loopSensors() {
-  temperature = myBarometer.bmp085GetTemperature(myBarometer.bmp085ReadUT());
-  pressure = myBarometer.bmp085GetPressure(myBarometer.bmp085ReadUP());
+  JSONVar point;
+  point["type"] = "Point";
+  JSONVar coordinates;
+  coordinates[0] = lat;
+  coordinates[1] = lng;
+  point["coordinates"] = coordinates;
+
+  JSONVar featureOfInterest;
+  featureOfInterest["name"] = "hier"; // TODO
+  featureOfInterest["description"] = "iets meer naar ginder"; // TODO
+  featureOfInterest["encodingType"] = "application/vnd.geo+json";
+  featureOfInterest["feature"] = point;
+
+  JSONVar observation;
+  observation["phenomenonTime"] = getISO8601dateTime();
+  observation["FeatureOfInterest"] = featureOfInterest;
+
+  observation["result"] = measureTemperature();
+  transmitValue(3, observation);
+
+  observation["result"] = measurePressure();
+  transmitValue(4, observation);
+
+  delay(100); // 10Hz
 }

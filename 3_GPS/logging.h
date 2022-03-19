@@ -1,6 +1,6 @@
 #pragma once
 
-void startLogging()
+void setupLogging()
 {
   Serial.begin(115200);
   while (!Serial);

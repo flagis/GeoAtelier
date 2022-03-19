@@ -9,10 +9,10 @@
 #include "logging.h"
 
 void setup() {
-  startLogging();
-  startSensor();
+  setupLogging();
+  setupSensor();
 }
 
 void loop() {
-  readSensor();
+  loopSensor();
 }

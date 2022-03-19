@@ -14,7 +14,7 @@ float measurement = 0.0f;
 
 void setup()
 {
-  startLogging();
+  setupLogging();
 
   connect2Wifi(ssid, pass);
 

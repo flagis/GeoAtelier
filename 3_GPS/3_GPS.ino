@@ -17,7 +17,7 @@ unsigned long last = 0UL;
 
 void setup()
 {
-  startLogging();
+  setupLogging();
 
   ss.begin(GPSBaud);
 }

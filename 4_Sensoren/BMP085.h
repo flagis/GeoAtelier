@@ -6,11 +6,11 @@ BMP085 myBarometer;
 float temperature;
 float pressure;
 
-void startSensor() {
+void setupSensor() {
   myBarometer.init();
 }
 
-void readSensor() {
+void loopSensor() {
   temperature = myBarometer.bmp085GetTemperature(myBarometer.bmp085ReadUT());
   pressure = myBarometer.bmp085GetPressure(myBarometer.bmp085ReadUP());
 }

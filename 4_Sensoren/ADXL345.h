@@ -4,11 +4,11 @@
 int x, y, z;
 double xyz[3];
 
-void startSensor() {
+void setupSensor() {
   adxl.powerOn();
 }
 
-void readSensor() {
+void loopSensor() {
   adxl.readXYZ(&x, &y, &z); //read the accelerometer values and store them in variables  x,y,z
   adxl.getAcceleration(xyz);
 

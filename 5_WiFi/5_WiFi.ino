@@ -9,7 +9,7 @@
 #include "logging.h"
 
 void setup() {
-  startLogging();
+  setupLogging();
 
   Serial.print("\nConnecting to ");
   Serial.println(ssid);

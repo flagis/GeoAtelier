@@ -9,7 +9,7 @@
 
 void setup()
 {
-  startLogging();
+  setupLogging();
 
   connect2Wifi(ssid, pass);
 }

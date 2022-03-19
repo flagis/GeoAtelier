@@ -17,8 +17,8 @@
 
 void setup()
 {
-  startLogging();
- // startSensor();
+  setupLogging();
+ // setupSensor();
 
   connect2Wifi(ssid, pass);
 }
@@ -48,6 +48,6 @@ void runInsert()
 
 void loop()
 {
- // readSensor();
+ // loopSensor();
   runInsert();
 }

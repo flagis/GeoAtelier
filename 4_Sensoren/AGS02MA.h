@@ -1,8 +1,8 @@
 #include <AGS02MA.h> // https://github.com/RobTillaart/AGS02MA
 
-AGS02MA AGS(26);
+AGS02MA AGS(26); // 26 =
 
-void startSensor() {
+void setupSensor() {
   Wire.begin();
   bool b = AGS.begin();
 
@@ -18,7 +18,7 @@ void startSensor() {
   uint8_t m = AGS.getMode();
 }
 
-void readSensor() {
+void loopSensor() {
   Serial.print("PPM:\t");
   Serial.print(AGS.readPPM(), 3);
   Serial.print("\t");

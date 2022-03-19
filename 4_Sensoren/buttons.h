@@ -1,6 +1,6 @@
-void startSensor() {
+void setupSensor() {
 
 }
 
-void readSensor() {
+void loopSensor() {
 }

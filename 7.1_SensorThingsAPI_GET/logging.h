@@ -1,6 +1,6 @@
 #pragma once
 
-void startLogging(uint32_t baudrate = 115200)
+void setupLogging(uint32_t baudrate = 115200)
 {
   Serial.begin(baudrate);
   while (!Serial);

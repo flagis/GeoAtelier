@@ -1,5 +1,8 @@
 # Datastreams
 
+Once the sensor is coupled with the thing, the datastream can be created.
+The sensor number is encoded, on a white sticker, in blue (left), the ObserverProperty in pencil (dark grey, right angled)
+
 POST:
 `http://<host>/FROST-Server/v1.0/Things(x)/Datastreams`
 

@@ -1,2 +1,0 @@
-# Open the Blink example
-

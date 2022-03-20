@@ -70,7 +70,7 @@ POST:
     "definition": "http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeCentigrade"
   },
   "ObservedProperty":{"@iot.id": 33},
-  "Sensor":{"@iot.id": 41}
+  "Sensor":{"@iot.id": 42}
 }
 ```
 ```javascript

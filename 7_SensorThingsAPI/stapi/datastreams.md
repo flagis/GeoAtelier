@@ -1,5 +1,7 @@
 # Datastreams
 
+Participants choose their sensor
+
 Once the sensor is coupled with the thing, the datastream can be created.
 The sensor number is encoded, on a white sticker, in blue (left), the ObserverProperty in pencil (dark grey, right angled)
 
@@ -8,10 +10,10 @@ POST:
 
 ## Taiwan Alpha Flex Sensor - 60mm
 
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 
 ```javascript
 {
@@ -28,10 +30,10 @@ POST:
 }
 ```
 ## HX711 weight scale
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "Weight DS",
@@ -47,10 +49,10 @@ POST:
 }
 ```
 ## HMC5883L 3-Axis Kompas Magnetometer Sensor Module 3V-5V V2
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "Magnetic fields DS",
@@ -66,10 +68,10 @@ POST:
 }
 ```
 ## BMP180 Digitale Barometer Druk Sensor Module
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "Barometric Pressure DS",
@@ -85,10 +87,10 @@ POST:
 }
 ```
 ## AM2320 Thermometer Temperatuur en Vochtigheids Sensor
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 
 Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 
@@ -121,10 +123,10 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## ASAIR AGS02MA TVOC Gassensor
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "TVOC DS",
@@ -140,10 +142,10 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## ADXL345 Digitale 3-axis Accelerometer Module V2
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "Acceleration DS",
@@ -159,10 +161,10 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## MAX4466 Microfoon Versterker Module met Microfoon
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "SignalStrength DS",
@@ -178,10 +180,10 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## Touch Module TTP224 4-kanaals
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "State DS",
@@ -197,10 +199,10 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## RCWL-1601 Ultrasonische Sensor
-| *Thing*
-|-
-|.|
-|.|
+| *Thing @iot.id* | *Datastream @iot.id*
+|-|-
+|.|.
+|.|.
 ```javascript
 {
   "name": "Distance DS",

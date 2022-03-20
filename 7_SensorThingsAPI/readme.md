@@ -16,8 +16,10 @@ auto base_url = String(protocol) + "://" + domain + path;
 
 ## Sending observations
 
-### The datastream, really tied the room together”
-The datastream is where this Thing, Sensor, ObservedProperty and Observation are tied together.
+### Observations & Measurements (O&M)
+
+### The datastream, really tied the room together
+The datastream is where this Thing, Sensor, ObservedProperty and Observation are tied together. The Datastream is the (OData) base to create (POST) the Observation.
 
 ### The code:
 

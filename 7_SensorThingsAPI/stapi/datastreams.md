@@ -3,7 +3,9 @@
 Participants choose their sensor. When seated again at the table, note the Thing @iot.id below.
 
 Once the sensor is coupled with the thing, the datastream can be created.
-The sensor number is encoded, on a white sticker, in blue (left), the ObserverProperty in pencil (dark grey, right angled)
+The sensor `@iot.id` is encoded, on a white sticker, in blue (left), the ObserverProperty `@iot.id` in pencil (dark grey, right angled)
+
+After the Datastreams have been created, note the `@iot.id` in the tables below. (The Datastream `@iot.id` needs to be used when posting observations!)
 
 POST:
 `http://<host>/FROST-Server/v1.0/Things(x)/Datastreams`

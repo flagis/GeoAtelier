@@ -89,6 +89,9 @@ POST:
 |-
 |.|
 |.|
+
+Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
+
 ```javascript
 {
   "name": "Temperature DS",

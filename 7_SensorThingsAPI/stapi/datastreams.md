@@ -10,8 +10,8 @@ POST:
 
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 
 ```javascript
 {
@@ -30,8 +30,8 @@ POST:
 ## HX711 weight scale
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Weight DS",
@@ -49,8 +49,8 @@ POST:
 ## HMC5883L 3-Axis Kompas Magnetometer Sensor Module 3V-5V V2
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Magnetic fields DS",
@@ -68,8 +68,8 @@ POST:
 ## BMP180 Digitale Barometer Druk Sensor Module
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Barometric Pressure DS",
@@ -87,8 +87,8 @@ POST:
 ## AM2320 Thermometer Temperatuur en Vochtigheids Sensor
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Temperature DS",
@@ -120,8 +120,8 @@ POST:
 ## ASAIR AGS02MA TVOC Gassensor
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "TVOC DS",
@@ -139,8 +139,8 @@ POST:
 ## ADXL345 Digitale 3-axis Accelerometer Module V2
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Acceleration DS",
@@ -158,8 +158,8 @@ POST:
 ## MAX4466 Microfoon Versterker Module met Microfoon
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "SignalStrength DS",
@@ -177,8 +177,8 @@ POST:
 ## Touch Module TTP224 4-kanaals
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "State DS",
@@ -196,8 +196,8 @@ POST:
 ## RCWL-1601 Ultrasonische Sensor
 | *Thing*
 |-
-|_ |
-|_ |
+|.|
+|.|
 ```javascript
 {
   "name": "Distance DS",

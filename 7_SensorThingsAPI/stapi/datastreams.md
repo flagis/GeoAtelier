@@ -6,6 +6,7 @@ The sensor number is encoded, on a white sticker, in blue (left), the ObserverPr
 POST:
 `http://<host>/FROST-Server/v1.0/Things(x)/Datastreams`
 
+## Taiwan Alpha Flex Sensor - 60mm
 ```javascript
 {
   "name": "AngleRange DS",
@@ -20,6 +21,7 @@ POST:
   "Sensor":{"@iot.id": 38}
 }
 ```
+## HX711 weight scale
 ```javascript
 {
   "name": "Weight DS",
@@ -34,6 +36,7 @@ POST:
   "Sensor":{"@iot.id": 39}
 }
 ```
+## HMC5883L 3-Axis Kompas Magnetometer Sensor Module 3V-5V V2
 ```javascript
 {
   "name": "Magnetic fields DS",
@@ -48,6 +51,7 @@ POST:
   "Sensor":{"@iot.id": 40}
 }
 ```
+## BMP180 Digitale Barometer Druk Sensor Module
 ```javascript
 {
   "name": "Barometric Pressure DS",
@@ -62,6 +66,7 @@ POST:
   "Sensor":{"@iot.id": 41}
 }
 ```
+## AM2320 Thermometer Temperatuur en Vochtigheids Sensor
 ```javascript
 {
   "name": "Temperature DS",
@@ -90,6 +95,7 @@ POST:
   "Sensor":{"@iot.id": 42}
 }
 ```
+## ASAIR AGS02MA TVOC Gassensor
 ```javascript
 {
   "name": "TVOC DS",
@@ -104,6 +110,7 @@ POST:
   "Sensor":{"@iot.id": 43}
 }
 ```
+## ADXL345 Digitale 3-axis Accelerometer Module V2
 ```javascript
 {
   "name": "Acceleration DS",
@@ -118,6 +125,7 @@ POST:
   "Sensor":{"@iot.id": 44}
 }
 ```
+## MAX4466 Microfoon Versterker Module met Microfoon
 ```javascript
 {
   "name": "SignalStrength DS",
@@ -132,6 +140,7 @@ POST:
   "Sensor":{"@iot.id": 45}
 }
 ```
+## Touch Module TTP224 4-kanaals
 ```javascript
 {
   "name": "State DS",
@@ -146,6 +155,7 @@ POST:
   "Sensor":{"@iot.id": 46}
 }
 ```
+## RCWL-1601 Ultrasonische Sensor
 ```javascript
 {
   "name": "Distance DS",

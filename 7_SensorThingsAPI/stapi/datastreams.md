@@ -10,7 +10,7 @@ POST:
 
 ## Taiwan Alpha Flex Sensor - 60mm
 
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -30,7 +30,7 @@ POST:
 }
 ```
 ## HX711 weight scale
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -49,7 +49,7 @@ POST:
 }
 ```
 ## HMC5883L 3-Axis Kompas Magnetometer Sensor Module 3V-5V V2
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -68,7 +68,7 @@ POST:
 }
 ```
 ## BMP180 Digitale Barometer Druk Sensor Module
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -87,7 +87,7 @@ POST:
 }
 ```
 ## AM2320 Thermometer Temperatuur en Vochtigheids Sensor
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -123,7 +123,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## ASAIR AGS02MA TVOC Gassensor
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -142,7 +142,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## ADXL345 Digitale 3-axis Accelerometer Module V2
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -161,7 +161,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## MAX4466 Microfoon Versterker Module met Microfoon
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -180,7 +180,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## Touch Module TTP224 4-kanaals
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.
@@ -199,7 +199,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 }
 ```
 ## RCWL-1601 Ultrasonische Sensor
-| *Thing @iot.id* | *Datastream @iot.id*
+| **Thing** `@iot.id` | **Datastream** `@iot.id`
 |-|-
 |.|.
 |.|.

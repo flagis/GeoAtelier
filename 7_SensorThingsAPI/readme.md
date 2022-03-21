@@ -24,23 +24,24 @@ The `Datastream` is where the `Thing`, `Sensor`, `ObservedProperty` are tied tog
 ### The (single) Observation:
 
 ```cpp
-  JSONVar point;
-  point["type"] = "Point";
-  JSONVar coordinates;
-  coordinates[0] = lat;
-  coordinates[1] = lng;
-  point["coordinates"] = coordinates;
+JSONVar point;
+point["type"] = "Point";
+JSONVar coordinates;
+coordinates[0] = lat;
+coordinates[1] = lng;
+coordinates[2] = height;
+point["coordinates"] = coordinates;
 
-  JSONVar featureOfInterest;
-  featureOfInterest["name"] = "Round about here,";
-  featureOfInterest["description"] = "the punk soul brother";
-  featureOfInterest["encodingType"] = "application/vnd.geo+json";
-  featureOfInterest["feature"] = point;
+JSONVar featureOfInterest;
+featureOfInterest["name"] = "Round about here,";
+featureOfInterest["description"] = "the punk soul brother";
+featureOfInterest["encodingType"] = "application/vnd.geo+json";
+featureOfInterest["feature"] = point;
 
-  JSONVar observation;
-  observation["phenomenonTime"] = getISO8601dateTime();
-  observation["FeatureOfInterest"] = featureOfInterest;
-  observation["result"] = measureDistance();
+JSONVar observation;
+observation["phenomenonTime"] = getISO8601dateTime();
+observation["FeatureOfInterest"] = featureOfInterest;
+observation["result"] = measureDistance();
 ```
 
 ### The code:

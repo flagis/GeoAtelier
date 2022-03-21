@@ -21,6 +21,28 @@ auto base_url = String(protocol) + "://" + domain + path;
 ### The datastream, really tied the room together
 The `Datastream` is where the `Thing`, `Sensor`, `ObservedProperty` are tied together. The `Datastream` is the (OData) base to create (POST) the `Observations`.
 
+### The (single) Observation:
+
+```cpp
+  JSONVar point;
+  point["type"] = "Point";
+  JSONVar coordinates;
+  coordinates[0] = lat;
+  coordinates[1] = lng;
+  point["coordinates"] = coordinates;
+
+  JSONVar featureOfInterest;
+  featureOfInterest["name"] = "Round about here,";
+  featureOfInterest["description"] = "the punk soul brother";
+  featureOfInterest["encodingType"] = "application/vnd.geo+json";
+  featureOfInterest["feature"] = point;
+
+  JSONVar observation;
+  observation["phenomenonTime"] = getISO8601dateTime();
+  observation["FeatureOfInterest"] = featureOfInterest;
+  observation["result"] = measureDistance();
+```
+
 ### The code:
 
 ```cpp

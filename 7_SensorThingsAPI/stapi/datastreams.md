@@ -190,7 +190,7 @@ Note: The AM2320 has 2 sensors embedded and will have 2 Datastreams!
 {
   "name": "State DS",
   "description": "Datastream for recording State",
-  "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+  "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation",
   "unitOfMeasurement": {
     "name": "onOff",
     "symbol": "xxx",

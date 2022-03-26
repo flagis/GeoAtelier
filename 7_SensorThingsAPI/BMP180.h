@@ -3,6 +3,9 @@
 
 Adafruit_BMP085 bmp;
 
+const uint32_t datastreamId1 = 666; //
+const uint32_t datastreamId2 = 666; //
+
 const float measureTemperature()
 {
   return bmp.readTemperature();
@@ -37,10 +40,10 @@ void loopSensors() {
   observation["FeatureOfInterest"] = featureOfInterest;
 
   observation["result"] = measureTemperature();
-  transmitValue(3, observation);
+  transmitValue(datastreamId1, observation);
 
   observation["result"] = measurePressure();
-  transmitValue(4, observation);
+  transmitValue(datastreamId2, observation);
 
   delay(100); // 10Hz
 }

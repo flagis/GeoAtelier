@@ -2,6 +2,8 @@
 
 AGS02MA AGS(26); // 26 =
 
+const uint32_t datastreamId = 666; //
+
 const float measurePPM()
 {
   return AGS.readPPM();
@@ -43,7 +45,7 @@ void loopSensors()
   observation["FeatureOfInterest"] = featureOfInterest;
 
   observation["result"] = measurePPM();
-  transmitValue(5, observation);
+  transmitValue(datastreamId, observation);
 
   delay(100); // 10Hz
 }

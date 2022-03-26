@@ -14,9 +14,9 @@ void transmitValue(const int datastreamId, const JSONVar& observation);
 
 // Uncomment the line below, corresponding with the used sensors
 //#include "ADXL345.h"
-#include "BMP085.h"
+//#include "BMP085.h"
 //#include "BMP180.h"
-//#include "buttons.h"
+#include "buttons.h"
 //#include "HMC5883.h"
 //#include "HX711.h"
 //#include "HCSR04.h"

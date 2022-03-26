@@ -4,6 +4,9 @@
 int x, y, z;
 double xyz[3];
 
+const uint32_t datastreamId1 = 666; //
+const uint32_t datastreamId2 = 666; //
+
 void setupSensors() {
   adxl.powerOn();
 }
@@ -31,10 +34,10 @@ void loopSensors()
   adxl.getAcceleration(xyz);
 
   //  observation["result"] = measureTemperature();
-  transmitValue(3, observation);
+  transmitValue(datastreamId1, observation);
 
   //  observation["result"] = measurePressure();
-  transmitValue(4, observation);
+  transmitValue(datastreamId2, observation);
 
   delay(100); // 10Hz
 }

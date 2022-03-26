@@ -5,6 +5,8 @@
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
+const uint32_t datastreamId = 666; //
+
 void setupSensors() {
   if (!mag.begin())
     Serial.println("Ooops, no HMC5883 detected ... Check your wiring!");
@@ -30,7 +32,7 @@ void loopSensors()
   observation["FeatureOfInterest"] = featureOfInterest;
 
   observation["result"] = measureDistance();
-  transmitValue(3, observation);
+  transmitValue(datastreamId, observation);
 
   delay(100); // 10Hz
 }

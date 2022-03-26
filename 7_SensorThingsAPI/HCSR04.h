@@ -4,6 +4,8 @@
 const uint8_t trigPin = D8;
 const uint8_t echoPin = D7;
 
+const uint32_t datastreamId = 666; //
+
 void setupSensors() {
   Serial.println("Setting pin modes");
   
@@ -48,7 +50,7 @@ void loopSensors()
   observation["FeatureOfInterest"] = featureOfInterest;
 
   observation["result"] = measureDistance();
-  transmitValue(3, observation);
+  transmitValue(datastreamId, observation);
 
   delay(100); // 10Hz
 }

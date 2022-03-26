@@ -5,6 +5,8 @@ HX711 scale; // instance
 const uint8_t dataPin = D2;
 const uint8_t clockPin = D3;
 
+const uint32_t datastreamId = 666; //
+
 const float measureWeight()
 {
   return scale.get_units(5);
@@ -40,7 +42,7 @@ void loopSensors()
   observation["FeatureOfInterest"] = featureOfInterest;
 
   observation["result"] = measureWeight();
-  transmitValue(3, observation);
+  transmitValue(datastreamId, observation);
 
   delay(100); // 10Hz
 }

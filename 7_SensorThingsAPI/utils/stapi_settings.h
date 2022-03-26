@@ -1,7 +1,7 @@
 #pragma once
 
 const char protocol[] = "http";
-const char host[] = "192.168.1.10";
+const char host[] = "aardvark.local";
 const uint16_t port = 80;
 const char path[] = "/v1.1";
 

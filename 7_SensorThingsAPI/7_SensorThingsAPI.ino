@@ -32,9 +32,9 @@ void setup()
 
 void transmitValue(const int datastreamId, const JSONVar& observation)
 {
-  String url = base_url + "/Datastream(" + datastreamId + ")/Observations";
+  String url = base_url + "/Datastreams(" + datastreamId + ")/Observations";
   Serial.println(url);
- 
+
   String httpRequestData = JSON.stringify(observation);
   Serial.println(httpRequestData);
 
@@ -43,9 +43,9 @@ void transmitValue(const int datastreamId, const JSONVar& observation)
   http.begin(client, url);
   http.addHeader("Content-Type", "application/json");
   auto httpResponseCode = http.POST(httpRequestData);
+  Serial.print("HTTP Response code: ");
+  Serial.println(httpResponseCode);
   if (httpResponseCode > 0) {
-    Serial.print("HTTP Response code: ");
-    Serial.println(httpResponseCode);
     String payload = http.getString();
     Serial.println(payload);
   }

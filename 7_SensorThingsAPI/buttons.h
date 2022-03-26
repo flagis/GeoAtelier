@@ -1,4 +1,4 @@
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = 13; //
 
 void setupSensors() {
 
@@ -25,5 +25,5 @@ void loopSensors() {
   observation["result"] = 12.3f;
   transmitValue(datastreamId, observation);
 
-  delay(100); // 10Hz
+  delay(5000); // 10Hz
 }

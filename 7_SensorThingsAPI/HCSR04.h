@@ -32,6 +32,7 @@ const float measureDistance()
 
 void loopSensors() 
 {
+/*
   JSONVar point;
   point["type"] = "Point";
   JSONVar coordinates;
@@ -44,12 +45,12 @@ void loopSensors()
   featureOfInterest["description"] = "iets meer naar ginder"; // TODO
   featureOfInterest["encodingType"] = "application/vnd.geo+json";
   featureOfInterest["feature"] = point;
-
+*/
   JSONVar observation;
-  observation["phenomenonTime"] = getISO8601dateTime();
-  observation["FeatureOfInterest"] = featureOfInterest;
-
+//  observation["FeatureOfInterest"] = featureOfInterest;
+//  observation["phenomenonTime"] = getISO8601dateTime();
   observation["result"] = measureDistance();
+
   transmitValue(datastreamId, observation);
 
   delay(100); // 10Hz

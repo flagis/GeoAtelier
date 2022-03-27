@@ -10,8 +10,8 @@
 | ----- | ----------- |
 | 09:00 | Welkom
 | 09:10 | [Install Arduino IDE ⚙️](https://github.com/flagis/GeoAtelier/tree/main/0_Installatie)
-| 09:15 | [Blink 😉]()
-| 09:25 | [LogWindow]()
+| 09:15 | [Blink 😉](https://github.com/flagis/GeoAtelier/tree/main/1_Blink)
+| 09:25 | [LogWindow](https://github.com/flagis/GeoAtelier/tree/main/2_LogWindow)
 | 09:35 | [GPS 🛰️]()
 | 10:00 | [Sensors 🌡️🎛️🪠 per table]()
 | 10:30 | [Connecting to the WiFi 📶]()

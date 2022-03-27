@@ -6,8 +6,8 @@ An implementation of the OGC SensorThings API spec is running on the cloud (a Sy
 
 ```cpp
 const char protocol[] = "http";
-const char host[] = "192.168.0.105";
-const uint16_t port = 49154;
+const char host[] = "aardvark.local";
+const uint16_t port = 80;
 const char path[] = "/v1.1";
 
 auto domain = String(host) + ":" + port + "/FROST-Server";

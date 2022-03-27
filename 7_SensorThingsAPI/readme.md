@@ -25,7 +25,7 @@ The `Datastream` is where the `Thing`, `Sensor`, `ObservedProperty` are tied tog
 
 ```cpp
 JSONVar observation;
-observation["result"] = measureDistance();
+observation["result"] = 42;
 ```
 
 ### The HTTP POST code:

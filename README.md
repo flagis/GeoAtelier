@@ -15,6 +15,7 @@
 | 09:35 | [GPS 🛰️](https://github.com/flagis/GeoAtelier/tree/main/3_GPS)
 | 10:00 | [Sensors 🌡️🎛️🪠 per table](https://github.com/flagis/GeoAtelier/tree/main/4_Sensoren)
 | 10:30 | [Connecting to the WiFi 📶](https://github.com/flagis/GeoAtelier/tree/main/5_WiFi)
+| 10:45 | Break ☕️🫖🧃
 | 10:45 | [Sending data to a server](https://github.com/flagis/GeoAtelier/tree/main/6_SendReading)
 | 11:15 | [Towards a model for Observations]()
 | 12:30 | 🍕🍕🍕🍕🍕

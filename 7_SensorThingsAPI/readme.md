@@ -2,7 +2,7 @@
 
 ## What & where OGC SensorThings API??
 
-An implementation of the OGC SensorThings API spec is running on the cloud (a Synology NAS): Fraunhofer's FROST. We connect to it using HTTP (MQTT is also enabled, you can subscribe to all messages coming in)
+An implementation of the OGC SensorThings API spec is running on the cloud (a Synology NAS): Fraunhofer's FROST. We connect to it using HTTP (MQTT is also enabled, you can subscribe to all messages coming in. Host is mqtt://aardvark.local on the the default 1883 port)
 
 ```cpp
 const char protocol[] = "http";

@@ -5,8 +5,10 @@
 //#include "BMP180.h"
 //#include "buttons.h"
 //#include "HMC5883.h"
-//#include "HX711.h"
-#include "HCSR04.h"
+#include "HX711.h"
+//#include "HCSR04.h"
+//#include "MB060.h"
+//#include "MAX4466.h"
 
 void setup() {
   setupLogging();

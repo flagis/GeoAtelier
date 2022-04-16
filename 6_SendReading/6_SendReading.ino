@@ -17,7 +17,9 @@ void transmitValue(float value);
 //#include "buttons.h"
 //#include "HMC5883.h"
 //#include "HX711.h"
-#include "HCSR04.h"
+//#include "HCSR04.h"
+//#include "MB060.h"
+#include "MAX4466.h"
 
 MySQL_Connection conn((Client *)&client);
 auto query_mem = MySQL_Query(&conn);

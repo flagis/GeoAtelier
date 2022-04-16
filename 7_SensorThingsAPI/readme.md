@@ -2,12 +2,12 @@
 
 ## What & where OGC SensorThings API??
 
-An implementation of the OGC SensorThings API spec is running on the cloud (a Synology NAS): Fraunhofer's FROST. We connect to it using HTTP (MQTT is also enabled, but is not used here today)
+An implementation of the OGC SensorThings API spec is running on the cloud (a Synology NAS): Fraunhofer's FROST. We connect to it using HTTP (`MQTT` is also enabled, you can subscribe to all messages coming in. Host is `mqtt://aardvark.local` on the the default `1883` port)
 
 ```cpp
 const char protocol[] = "http";
-const char host[] = "192.168.0.105";
-const uint16_t port = 49154;
+const char host[] = "aardvark.local";
+const uint16_t port = 80;
 const char path[] = "/v1.1";
 
 auto domain = String(host) + ":" + port + "/FROST-Server";
@@ -21,30 +21,14 @@ auto base_url = String(protocol) + "://" + domain + path;
 ### The datastream, really tied the room together
 The `Datastream` is where the `Thing`, `Sensor`, `ObservedProperty` are tied together. The `Datastream` is the (OData) base to create (POST) the `Observations`.
 
-### The (single) Observation:
+### The (minimum single) Observation:
 
 ```cpp
-JSONVar point;
-point["type"] = "Point";
-JSONVar coordinates;
-coordinates[0] = lat;
-coordinates[1] = lng;
-coordinates[2] = height;
-point["coordinates"] = coordinates;
-
-JSONVar featureOfInterest;
-featureOfInterest["name"] = "Round about here,";
-featureOfInterest["description"] = "the punk soul brother";
-featureOfInterest["encodingType"] = "application/vnd.geo+json";
-featureOfInterest["feature"] = point;
-
 JSONVar observation;
-observation["phenomenonTime"] = getISO8601dateTime();
-observation["FeatureOfInterest"] = featureOfInterest;
-observation["result"] = measureDistance();
+observation["result"] = 42;
 ```
 
-### The code:
+### The HTTP POST code:
 
 ```cpp
 void transmitValue(const int datastreamId, const JSONVar& observation)
@@ -60,9 +44,9 @@ void transmitValue(const int datastreamId, const JSONVar& observation)
   http.begin(client, url);
   http.addHeader("Content-Type", "application/json");
   auto httpResponseCode = http.POST(httpRequestData);
+  Serial.print("HTTP Response code: ");
+  Serial.println(httpResponseCode);
   if (httpResponseCode > 0) {
-    Serial.print("HTTP Response code: ");
-    Serial.println(httpResponseCode);
     String payload = http.getString();
     Serial.println(payload);
   }

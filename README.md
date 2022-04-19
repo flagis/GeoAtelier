@@ -27,6 +27,6 @@
 | 13:00 | [🍕🍕🍕 + Recap morning]()
 | 13:30 | [Sending data to an O&M service using REST](https://github.com/flagis/GeoAtelier/tree/main/7_SensorThingsAPI)
 | 14:00 | [IoT Communication]()
-| 14:30 | [Observations & Measurements (O&M) & variations]()
+| 14:30 | [Observations & Measurements (O&M) & variations (SSN, SOSA, LDES)]()
 | 15:00 | [Scaling IoT]()
 | 15:30 | [Looking at measurements in 2D and 3D]()

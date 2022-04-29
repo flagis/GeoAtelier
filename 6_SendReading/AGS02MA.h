@@ -19,8 +19,12 @@ void setupSensors() {
 }
 
 void loopSensors() {
+  delay(500);
+
+  auto ppm = AGS.readPPM();
+
   Serial.print("PPM:\t");
-  Serial.print(AGS.readPPM(), 3);
+  Serial.print(ppm, 3);
   Serial.print("\t");
   Serial.print(AGS.dataReady(), HEX);
   Serial.print("\t");
@@ -28,4 +32,6 @@ void loopSensors() {
   Serial.print("\t");
   Serial.print(AGS.lastError(), HEX);
   Serial.println();
+
+  transmitValue(ppm);
 }

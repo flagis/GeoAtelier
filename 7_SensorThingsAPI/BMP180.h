@@ -1,51 +1,44 @@
-#include <Wire.h>
-#include <Adafruit_BMP085.h> // from library manager: Adafruit BMP085 library (1.2.1) (non unified)
+#include <Adafruit_BMP085.h>
 
-Adafruit_BMP085 bmp;
+// Connect VCC of the BMP085 sensor to 3.3V (NOT 5.0V!)
+// Connect GND to Ground
+// Connect SCL to i2c clock
+// Connect SDA to i2c data
 
-const uint32_t datastreamId1 = 666; //
-const uint32_t datastreamId2 = 666; //
+Adafruit_BMP085 myBarometer;
 
-const float measureTemperature()
-{
-  return bmp.readTemperature();
-}
-
-const float measurePressure()
-{
-  return bmp.readPressure();
-}
+float pressure;
 
 void setupSensors() {
-  if (!bmp.begin())
-    Serial.println("error initializing BMO085");
+  myBarometer.begin();
 }
 
-void loopSensors() 
-{
-/*
-  JSONVar point;
-  point["type"] = "Point";
-  JSONVar coordinates;
-  coordinates[0] = lat;
-  coordinates[1] = lng;
-  point["coordinates"] = coordinates;
+void loopSensors() {
+  float pressure = myBarometer.readPressure() / 100;
 
-  JSONVar featureOfInterest;
-  featureOfInterest["name"] = "hier"; // TODO
-  featureOfInterest["description"] = "iets meer naar ginder"; // TODO
-  featureOfInterest["encodingType"] = "application/vnd.geo+json";
-  featureOfInterest["feature"] = point;
-*/
+  Serial.print(pressure, 2);
+  Serial.println(" hPa");
+
+  /*
+    JSONVar point;
+    point["type"] = "Point";
+    JSONVar coordinates;
+    coordinates[0] = lat;
+    coordinates[1] = lng;
+    point["coordinates"] = coordinates;
+
+    JSONVar featureOfInterest;
+    featureOfInterest["name"] = "hier"; // TODO
+    featureOfInterest["description"] = "iets meer naar ginder"; // TODO
+    featureOfInterest["encodingType"] = "application/vnd.geo+json";
+    featureOfInterest["feature"] = point;
+  */
   JSONVar observation;
-//  observation["FeatureOfInterest"] = featureOfInterest;
-//  observation["phenomenonTime"] = getISO8601dateTime();
-  observation["result"] = measureTemperature();
+  //  observation["FeatureOfInterest"] = featureOfInterest;
+  //  observation["phenomenonTime"] = getISO8601dateTime();
+  observation["result"] = pressure;
 
-  transmitValue(datastreamId1, observation);
+  transmitValue(datastreamId, observation);
 
-  observation["result"] = measurePressure();
-  transmitValue(datastreamId2, observation);
-
-  delay(100); // 10Hz
+  delay(100);
 }

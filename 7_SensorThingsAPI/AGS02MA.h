@@ -25,26 +25,38 @@ void setupSensors() {
   uint8_t m = AGS.getMode();
 }
 
-void loopSensors() 
+void loopSensors()
 {
-/*
-  JSONVar point;
-  point["type"] = "Point";
-  JSONVar coordinates;
-  coordinates[0] = lat;
-  coordinates[1] = lng;
-  point["coordinates"] = coordinates;
+  auto ppm = AGS.readPPM();
 
-  JSONVar featureOfInterest;
-  featureOfInterest["name"] = "hier"; // TODO
-  featureOfInterest["description"] = "iets meer naar ginder"; // TODO
-  featureOfInterest["encodingType"] = "application/vnd.geo+json";
-  featureOfInterest["feature"] = point;
-*/
+  Serial.print("PPM:\t");
+  Serial.print(ppm, 3);
+  Serial.print("\t");
+  Serial.print(AGS.dataReady(), HEX);
+  Serial.print("\t");
+  Serial.print(AGS.lastStatus(), HEX);
+  Serial.print("\t");
+  Serial.print(AGS.lastError(), HEX);
+  Serial.println();
+  
+  /*
+    JSONVar point;
+    point["type"] = "Point";
+    JSONVar coordinates;
+    coordinates[0] = lat;
+    coordinates[1] = lng;
+    point["coordinates"] = coordinates;
+
+    JSONVar featureOfInterest;
+    featureOfInterest["name"] = "hier"; // TODO
+    featureOfInterest["description"] = "iets meer naar ginder"; // TODO
+    featureOfInterest["encodingType"] = "application/vnd.geo+json";
+    featureOfInterest["feature"] = point;
+  */
   JSONVar observation;
-//  observation["FeatureOfInterest"] = featureOfInterest;
-//  observation["phenomenonTime"] = getISO8601dateTime();
-  observation["result"] = measurePPM();
+  //  observation["FeatureOfInterest"] = featureOfInterest;
+  //  observation["phenomenonTime"] = getISO8601dateTime();
+  observation["result"] = ppm;
 
   transmitValue(datastreamId, observation);
 

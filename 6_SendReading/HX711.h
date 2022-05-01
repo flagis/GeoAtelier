@@ -31,5 +31,5 @@ const float measureWeight()
 void loopSensors() {
   auto value = measureWeight();
 
-  transmitValue(distance);
+  transmitValue(value);
 }

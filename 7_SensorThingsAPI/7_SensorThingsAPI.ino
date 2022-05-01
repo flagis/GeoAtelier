@@ -2,6 +2,8 @@
 #include <ESP8266HTTPClient.h>
 #include <Arduino_JSON.h> // from https://github.com/arduino-libraries/Arduino_JSON
 
+float lat = 51, lng = 4;
+
 #include "utils/logging.h"
 #include "utils/credentials.h"
 #include "utils/stapi_settings.h"
@@ -21,7 +23,7 @@ void transmitValue(const int datastreamId, const JSONVar& observation);
 //#include "HCSR04.h"
 //#include "HMC5883.h"
 //#include "HX711.h"
-//#include "keyboard.h"
+#include "keyboard.h"
 //#include "MAX4466.h"
 //#include "MB060.h"
 

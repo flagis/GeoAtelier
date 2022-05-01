@@ -1,6 +1,6 @@
 const uint8_t soundPin = A0; // analoge uitgang van versterkt microfoon signaal
 
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = xxx; //
 
 void setupSensors() {
   // A0 for analog in

@@ -3,8 +3,8 @@
 
 Adafruit_BMP085 bmp;
 
-const uint32_t datastreamId1 = 666; //
-const uint32_t datastreamId2 = 666; //
+const uint32_t datastreamId1 = xxx; //
+const uint32_t datastreamId2 = xxx; //
 
 const float measureTemperature()
 {

@@ -4,8 +4,8 @@
 int x, y, z;
 double xyz[3];
 
-const uint32_t datastreamId1 = 666; //
-const uint32_t datastreamId2 = 666; //
+const uint32_t datastreamId1 = xxx; //
+const uint32_t datastreamId2 = yyy; //
 
 void setupSensors() {
   adxl.powerOn();

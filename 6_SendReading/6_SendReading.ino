@@ -1,5 +1,7 @@
 #include <ESP8266WiFi.h>
 
+float lat = 51, lng = 4, height = 4;
+
 #include "utils/logging.h"
 #include "utils/credentials.h"
 #include "utils/dbSettings.h"

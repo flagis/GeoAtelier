@@ -7,7 +7,7 @@ const uint8_t clockPin = D3;
 
 uint16 calibrate = 476; // manually calibrated, magic number
 
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = xxx; //
 
 const float measureWeight()
 {

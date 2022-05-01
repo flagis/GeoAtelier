@@ -19,8 +19,8 @@
 
 AM232X AM2320;
 
-const uint32_t datastreamIdHumidity = 666; //
-const uint32_t datastreamIdTemperature = 666; //
+const uint32_t datastreamIdHumidity = xxx; //
+const uint32_t datastreamIdTemperature = yyy; //
 
 void setupSensors() {
   Serial.println("Looking for AM2320");

@@ -10,8 +10,6 @@ const uint32_t GPSBaud = 9600;
 TinyGPSPlus gps;
 SoftwareSerial ss(RXPin, TXPin);
 
-float lat = 51, lng = 4;
-
 void setupGPS()
 {
   ss.begin(GPSBaud);

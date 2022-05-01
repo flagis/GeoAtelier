@@ -2,7 +2,7 @@
 
 AGS02MA AGS(26); // 26 =
 
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = xxx; //
 
 const float measurePPM()
 {

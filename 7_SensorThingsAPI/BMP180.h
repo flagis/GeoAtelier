@@ -5,6 +5,8 @@
 // Connect SCL to i2c clock
 // Connect SDA to i2c data
 
+const uint32_t datastreamId = xxx; //
+
 Adafruit_BMP085 myBarometer;
 
 float pressure;

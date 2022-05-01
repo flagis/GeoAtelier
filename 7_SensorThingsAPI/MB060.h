@@ -1,6 +1,6 @@
 const uint8_t flexPin = A0;
 
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = xxx; //
 
 // more info: https://www.instructables.com/How-to-use-a-Flex-Sensor-Arduino-Tutorial/
 

@@ -5,7 +5,7 @@
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
-const uint32_t datastreamId = 666; //
+const uint32_t datastreamId = xxx; //
 
 void setupSensors() {
   auto retVal = mag.begin();

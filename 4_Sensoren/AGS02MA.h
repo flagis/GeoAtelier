@@ -10,7 +10,7 @@
 //
 #include <AGS02MA.h> // https://github.com/RobTillaart/AGS02MA
 
-AGS02MA AGS(26); // 26 =
+AGS02MA AGS(26);
 
 void setupSensors() {
   Wire.begin();

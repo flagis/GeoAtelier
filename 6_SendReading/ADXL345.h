@@ -1,16 +1,37 @@
-#include <Wire.h> // standard library, no need to install
-#include <ADXL345.h> // url:
+//  ADXL345 PIN layout           ADXL345 COLOR   PIN
+//  ==================================================
+//   bottom view  DESCRIPTION     COLOR
+//       +---+
+//       |o  |       VDD          RED
+//       |o  |       SDA          YELLOW          D2
+//       |o  |       GND          BLACK
+//       |o  |       SCL          GREEN           D1
+//       +---+
 
-int x, y, z;
-double xyz[3];
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL345_U.h>
+
+Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
 
 void setupSensors() {
-  adxl.powerOn();
+  accel.begin();
+
+  /* Set the range to whatever is appropriate for your project */
+  accel.setRange(ADXL345_RANGE_16_G);
+  // accel.setRange(ADXL345_RANGE_8_G);
+  // accel.setRange(ADXL345_RANGE_4_G);
+  //accel.setRange(ADXL345_RANGE_2_G);
 }
 
 void loopSensors() {
-  adxl.readXYZ(&x, &y, &z); //read the accelerometer values and store them in variables  x,y,z
-  adxl.getAcceleration(xyz);
+  sensors_event_t event;
+  accel.getEvent(&event);
 
-  delay(500);
+  /* Display the results (acceleration is measured in m/s^2) */
+  Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
+  Serial.print("Y: "); Serial.print(event.acceleration.y); Serial.print("  ");
+  Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  "); Serial.println("m/s^2 ");
+
+  transmitValue(event.acceleration.x);
 }

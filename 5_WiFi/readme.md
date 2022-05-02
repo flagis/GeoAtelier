@@ -5,7 +5,6 @@ Other communication protocols are also availble (not on-board the Wemos by defau
 
 * Zigbee
 * LoRa
-* WiFi
 * 2G/4G/LTE/5G
 * BLE
 * NB-IoT

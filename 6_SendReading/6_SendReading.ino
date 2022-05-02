@@ -14,7 +14,7 @@ float lat = 51, lng = 4, height = 4;
 void transmitValue(float value);
 
 // Uncomment the line below, corresponding with the used sensors
-//#include "ADXL345.h"
+#include "ADXL345.h"
 //#include "AGS02MA.h"
 //#include "AM2320.h"
 //#include "BMP085.h"

@@ -43,7 +43,7 @@ void loopSensors()
   Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  "); Serial.println("m/s^2 ");
 
   //  observation["result"] = measureTemperature();
-  transmitValue(datastreamId1, event.acceleration.x);
+  transmitValue(datastreamId, event.acceleration.x);
 
   delay(100); // 10Hz
 }

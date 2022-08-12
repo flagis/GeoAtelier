@@ -6,7 +6,7 @@ To get step-by-step instructions select one of the following link accordingly to
 - [MacOS](https://docs.arduino.cc/software/ide-v1/tutorials/macOS)
 - [Linux](https://docs.arduino.cc/software/ide-v1/tutorials/Linux)
 
-# 2. Install Driver for Wemos D1 midi v3 (ESP8266)
+# 2. Install Driver for Wemos D1 mini v3 (ESP8266)
 ## step 2
 - Start the Arduino IDE (you installed in #1)
 - Open the Arduino Preferences:

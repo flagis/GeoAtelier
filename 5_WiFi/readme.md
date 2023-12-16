@@ -1,5 +1,5 @@
 # Communication
-In this GeoAtelier, focussed around IoT (Internet of Things), we use the internet to connect the thing with the service. The Wemos has *WiFi* build in and we'll use that (Wemos also has BLE onboard, but is not used). 
+In this GeoAtelier, focussed around IoT (Internet of Things), we use the internet to connect the thing with the service. The Wemos has *WiFi* build in and we'll use that. 
 
 Other communication protocols are also available (not on-board the Wemos by default):
 
